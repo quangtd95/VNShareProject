@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<th:block  th:replace="master::head">
+</th:block>
+<title>Register</title>
+</head>
+<body>
+	<header th:replace="master::header"></header>
+	<div th:replace="master::modal_contact"></div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div th:if="${error}"
+					class="row alert alert-danger alert-dismissible">
+					<button type="button" class="close" data-dismiss="alert"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<center>
+						<span><strong>Lỗi:</strong></span><span th:text="${error}"></span>
+					</center>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading">Đăng ký</div>
+					<div class="panel-body">
+
+						<form role="form" data-toggle="validator" class="form-horizontal" method="POST" action="#" onsubmit="return check()"
+							th:action="@{/register}" th:object="${user}">
+							<input type="hidden" th:field="*{id}" />
+							<div class="form-group">
+								<label for="name" class="col-md-4 control-label">Tên</label>
+								<div class="col-md-6">
+									<input th:field="*{name}" id="name" type="text" placeholder="name" 
+										class="form-control" name="name" value="" required="true"
+										autofocus="true" /> <span class="help-block"> <strong></strong>
+									</span>
+								</div>
+							</div>
+
+							<div
+								class="form-group">
+								<label for="email" class="col-md-4 control-label">Địa
+									chỉ email</label>
+
+								<div class="col-md-6">
+									<input th:field="*{email}" id="email" type="email" placeholder="email" 
+										class="form-control" name="email" value="" required="true" />
+									<span class="help-block"> <strong></strong>
+									</span>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="password" class="col-md-4 control-label">Mật
+									khẩu</label>
+
+								<div class="col-md-6">
+									 <input th:field="*{password}" type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required="true"/>
+								</div>
+								<div class="help-block with-errors"></div>
+							</div>
+
+							<div class="form-group">
+								<label for="password-confirm" class="col-md-4 control-label">Nhập
+									lại mật khẩu</label>
+
+								<div class="col-md-6">
+									 <input type="password" class="form-control" id="inputPasswordConfirm"  placeholder="Confirm" required="true"/>
+      							<div class="help-block with-errors" id="message"></div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-md-6 col-md-offset-4">
+									<button id="btnSubmit" type="submit" class="btn btn-primary">Đăng Ký</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer th:replace="master::footer"></footer>
+
+	<script type="text/javascript" th:src="@{/js/register.js}">
+		
+	</script>
+</body>
+</html>

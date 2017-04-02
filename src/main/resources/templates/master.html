@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.springframework.org/security/tags">
+<head>
+    <th:block th:fragment="head">
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+
+        <!-- JQuery -->
+        <script
+                src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+                th:src="@{/webjars/jquery/1.12.4/jquery.min.js}"></script>
+
+        <!--Boostrap -->
+        <link
+                href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+                th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"
+                rel="stylesheet"/>
+
+        <script
+                src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+                th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+
+        <!-- SweetAlert2 -->
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/sweetalert2/6.4.2/sweetalert2.min.css"
+              th:href="@{/webjars/sweetalert2/6.4.2/dist/sweetalert2.min.css}"/>
+
+        <script th:src="@{/webjars/sweetalert2/6.4.2/dist/sweetalert2.min.js}"
+                src="https://cdn.jsdelivr.net/sweetalert2/6.4.2/sweetalert2.min.js"></script>
+        <!-- Styles -->
+        <link href="../static/css/font-awesome.min.css"
+              th:href="@{/css/font-awesome.min.css}" rel="stylesheet"/>
+        <link href="../static/css/master.css" th:href="@{/css/master.css}"
+              rel="stylesheet"/>
+        <link href="../static/css/style-master.css"
+              th:href="@{/css/style-master.css}" rel="stylesheet"/>
+
+        <script src="./static/js/master.js" th:src="@{js/master.js}"></script>
+    </th:block>
+</head>
+<body>
+
+<div id="app">
+    <nav th:fragment="header"
+         class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Collapsed Hamburger -->
+                <button type="button" class="navbar-toggle collapsed"
+                        data-toggle="collapse" data-target="#app-navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span> <span
+                        class="icon-bar"></span> <span class="icon-bar"></span> <span
+                        class="icon-bar"></span>
+                </button>
+
+                <!-- Branding Image -->
+                <a class="navbar-brand" th:href="@{/}"> <b>VNShare</b>
+                </a>
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                <!-- Left Side Of Navbar -->
+                <ul class="nav navbar-nav">
+                    &nbsp;
+                    <li><a href="" role="button"><b>Bài viết</b></a></li>
+                    <li><a th:href="@{/author}" role="button"><b>Tác giả</b></a></li>
+                    <li><a th:href="@{/tag}" role="button"><b>Thẻ</b></a></li>
+                    <li><a href="#" data-toggle="modal" id="showModalContact"
+                           data-target="#btn-contact" role="button"><b>Liên hệ</b></a></li>
+
+                </ul>
+
+
+                <!-- Right Side Of Navbar -->
+                <ul class="nav navbar-nav navbar-right">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm"/>
+                            <button type="submit"
+                                    class="btn btn-default  fa fa-search btnsearch">
+                                <a href="{{route('login')}}"></a>
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="nav navbar-nav"
+                         sec:authorize="hasRole('ROLE_ANONYMOUS')">
+                        <li>
+                            <button class="btn btn-primary navbar-btn"
+                                    onclick="window.location.href='/login'">Đăng nhập
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn btn-primary navbar-btn btn-register"
+                                    onclick="window.location.href='/register'">Đăng ký
+                            </button>
+                        </li>
+                    </div>
+
+                    <div class="nav navbar-nav" sec:authorize="isAuthenticated()">
+                        <li><a href="#"> <i class="fa fa-pencil"
+                                            style="font-size: 1.5em;"></i></a></li>
+
+                        <li class="dropdown"><a href="#" class="dropdown-toggle"
+                                                data-toggle="dropdown"> <i class="fa fa-bell"
+                                                                           style="font-size: 1.5em;"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <div class="notification-menu dropdown-header">
+                                    <span>Thông báo</span> <span><a href=""
+                                                                    title="Notifcation settings"> <i aria-hidden="true"
+                                                                                                     class="fa fa-lg fa-cog"></i>
+										</a> </span>
+                                </div>
+
+                                <ul class="notification-container">#
+                                </ul>
+                                <div class="notification-footer dropdown-header">
+                                    <ul>
+                                        <a href="/notifications">
+                                            <small>Toàn bộ thông
+                                                báo
+                                            </small>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle"
+                                                data-toggle="dropdown" role="button" aria-expanded="false">
+                            <span class="caret"></span>
+                        </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/profile"> Profile </a></li>
+                                <li class="divider"></li>
+                                <li><a th:href="@{/logout}"> Logout </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}"
+                                          method="POST" style="display: none;"></form>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <footer th:fragment="footer" class=" footer bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h4 class="footer-header">Facebook</h4>
+                    <div class="fb-page"
+                         data-href="https://www.facebook.com/4rvnzoom/?hc_ref=NEWSFEED&amp;fref=nf"
+                         data-width="180" data-height="230" data-small-header="false"
+                         data-adapt-container-width="true" data-hide-cover="false"
+                         data-show-facepile="true">
+                        <blockquote
+                                cite="https://www.facebook.com/4rvnzoom/?hc_ref=NEWSFEED&amp;fref=nf"
+                                class="fb-xfbml-parse-ignore">
+                            <a
+                                    href="https://www.facebook.com/4rvnzoom/?hc_ref=NEWSFEED&amp;fref=nf">Vn-Zoom</a>
+                        </blockquote>
+                    </div>
+                    <div id="fb-root"></div>
+                    <script>
+                        /* <![CDATA[ */
+                        (function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id))
+                                return;
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+                        /* ]]> */
+                    </script>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="footer-header">Top Tác giả</h4>
+                    <div class="row">
+                        <div class="col-lg-2 avatar">
+                            <img src="../static/images/demo.jpg"
+                                 th:src="@{/images/demo.jpg}"/>
+                        </div>
+                        <div class="col-lg-2 avatar">
+                            <img src="../static/images/demo.jpg"
+                                 th:src="@{/images/demo.jpg}"/>
+                        </div>
+                        <div class="col-lg-2 avatar">
+                            <img src="../static/images/demo.jpg"
+                                 th:src="@{/images/demo.jpg}"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="footer-header">Tài Nguyên</h4>
+                    <ul class="resources">
+                        <li><a href="/newest">Bài viết</a></li>
+                        <li><a href="/authors">Tác giả</a></li>
+                        <li><a th:href="@{/tag}">Thẻ</a></li>
+                        <li><a href="#feedback" data-lity="">Liên hệ</a></li>
+                        <li><a href="/help">Trợ giúp</a></li>
+                        <li><a href="/terms">Điều khoản</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div
+                        class="col-md-6 sub-footer-section flex-items-md-left flex-items-xs-center">
+                    <p class="copyright">
+                        © 2017 <a href="http://facebook.com/quang.td95" target="_blank"
+                                  class="no-decoration-link">Thái Duy Quang.</a> Bài tập web ngữ
+                        nghĩa.
+                    </p>
+                </div>
+                <div
+                        class="col-md-6 sub-footer-section flex-items-md-right flex-items-xs-center">
+                    <ul class="footer-social-connections pl-0">
+                        <li>Follow Me</li>
+                        <li><a href="https://www.facebook.com/quang.td95"
+                               target="_blank" class="social-btn-circle facebook-btn"><i
+                                aria-hidden="true" class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.github.com/quangtd95"
+                               target="_blank" class="social-btn-circle github-btn"><i
+                                aria-hidden="true" class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</div>
+<!-- Scripts -->
+<script src="../static/js/master.js" th:src="@{/js/master.js}"></script>
+<div th:fragment="modal_contact" id="btn-contact" class="modal fade"
+     role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Liên hệ với admin</h4>
+            </div>
+            <form class="form-horizontal" role="form" method="POST" id="form_contact"
+                  th:action="@{/contact}">
+                <div class="modal-body">
+
+                    <label for="name" class="control-label">Họ Tên</label> <input
+                        id="modal-contact-name" type="text"
+                        class="form-control" name="name" placeholder="Nhập họ và tên" required="true"/>
+                    <label for="email" class="control-label">Email</label> <input
+                        id="modal-contact-email" type="text"
+                        class="form-control" name="email" placeholder="Nhập email" required="true"/> <label
+                        for="phone" class="control-label">Số điện thoại</label> <input
+                         id="modal-contact-phone" type="text"
+                        class="form-control" name="phone"
+                        placeholder="Nhập số điện thoại" required="true"/> <label for="content"
+                                                                           class="control-label">Nội dung</label> <input
+                        id="modal-contact-content" type="text"
+                        class="form-control" name="content" placeholder="Nhập nội dung" required="true"/>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" id="submitContact" class="btn btn-primary">Gửi liên hệ</button>
+
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+</body>
+
+</html>
