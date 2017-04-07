@@ -3,8 +3,10 @@ package td95.quang.domain;
 import java.util.Date;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
@@ -50,7 +52,7 @@ public class User {
 	@Type(type = "timestamp")
 	private Date updatedAt;
 
-	@ManyToMany
+	@ManyToMany(fetch=FetchType.EAGER,cascade=CascadeType.ALL)
 	@JoinTable(
 			name = "user_role", 
 			joinColumns = @JoinColumn(name = "user_id"), 

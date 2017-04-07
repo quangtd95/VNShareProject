@@ -1,10 +1,16 @@
 .navbar-default {
-  box-shadow: 0px 5px 5px grey; }
-  .navbar-default .navbar-nav li a:hover {
-    color: #f25f43; }
+  box-shadow: 0px 2px 2px grey;
+  background-color: #009688; }
+
+.navbar-default .navbar-nav li a:hover {
+  color: white; }
 
 .navbar-default .navbar-brand {
-  color: #f25f43; }
+  color: white;
+  font-size: 25px; }
+
+.navbar-default .navbar-nav li a {
+  color: white; }
 
 body {
   padding-top: 70px; }
@@ -16,8 +22,9 @@ body {
 
 .btn-sign-in {
   color: #ffffff !important; }
-  .btn-sign-in:hover {
-    color: black !important; }
+
+.btn-sign-in:hover {
+  color: black !important; }
 
 .dropdown .dropdown-menu .notification-menu {
   display: -webkit-box;
@@ -66,11 +73,13 @@ body {
   align-items: center;
   -webkit-box-pack: end;
   justify-content: flex-end; }
-  .footer-social-connections li {
-    list-style: none; }
-    .footer-social-connections li a {
-      text-decoration: none;
-      color: white !important; }
+
+.footer-social-connections li {
+  list-style: none; }
+
+.footer-social-connections li a {
+  text-decoration: none;
+  color: white !important; }
 
 .footer .avatar img {
   display: inline-block;
@@ -84,3 +93,5 @@ body {
   margin-left: 10px; }
 
 /*# sourceMappingURL=style-app.css.map */
+
+/*# sourceMappingURL=style-master.css.map */

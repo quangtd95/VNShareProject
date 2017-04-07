@@ -19,5 +19,7 @@ public interface UserService {
 	void save(User user);
 	
 	List<User> getHotAuthors();
+	
+	void createPasswordResetTokenForUser(User user,String token);
 
 }
