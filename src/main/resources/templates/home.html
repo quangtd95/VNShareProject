@@ -1,188 +1,203 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.springframework.org/security/tags">
 <head>
-<th:block th:replace="master::head"></th:block>
-<title>Home</title>
-<link rel="stylesheet" th:href="@{/css/home.css}"
-	href="../static/css/home.css" />
+    <th:block th:replace="master::head"></th:block>
+    <title>Home</title>
+    <link rel="stylesheet" th:href="@{/css/home.css}"
+          href="../static/css/home.css"/>
 </head>
 <body>
-	<div th:replace="master::header"></div>
-	<div th:replace="master::modal_contact"></div>
+<div th:replace="master::header"></div>
+<div th:replace="master::modal_contact"></div>
 
-	<div class="welcome">
-		<div class="container">
-			<div class="row">
-				<div sec:authorize="hasRole('ROLE_ANONYMOUS')">
-					<span class="h3"><b>VNShare</b></span><br /> <span class="h4"><strong>Sharing</strong>
-						knowledge for a <strong>better </strong> future</span><br /> <a
-						th:href="@{/login}" class="btn btn-primary mt-05 sign-in-btn">Đăng
-						nhập</a>
-				</div>
-				<div sec:authorize="isAuthenticated()">
-					<span class="h3"><b>Chào bạn <span
-							th:text="${user.getName()}"></span></b></span><br /> <a href=""
-						class="btn btn-primary mt-05 sign-in-btn">Viết bài mới ngay</a>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class=" welcome">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div sec:authorize="hasRole('ROLE_ANONYMOUS')">
+                    <span class="h3"><b>VNShare</b></span><br/>
+                    <span class="h4"><strong>Sharing</strong> knowledge for a <strong>better </strong> future</span><br/>
+                    <a th:href="@{/login}" class="btn btn-primary mt-05 sign-in-btn">Đăng nhập</a>
+                </div>
+                <div sec:authorize="isAuthenticated()">
+					<span class="h3">
+                        <b>Chào bạn <span th:text="${user.getName()}"></span></b>
+                    </span><br/>
+                    <a href="" class="btn btn-primary mt-05 sign-in-btn">Viết bài mới ngay</a>
+                </div>
+            </div>
 
-	<div id="post-filters">
-		<div class="container filters-row">
-			<div class="row">
-				<ul class="list-inline">
-					<li class="filters-item "><a href=""><b>MỚI NHẤT</b></a></li>
-					<li class="filters-item"><a href=""><b>XEM NHIỀU NHẤT</b></a></li>
-					<li class="filters-item"><a href=""><b>XU THẾ</b></a></li>
-					<li class="filters-item" sec:authorize="isAuthenticated()"><a
-						id="following"><b>ĐANG THEO DÕI</b></a></li>
-					
-	
-				</ul>
-			</div>
-		</div>
-	</div>
+        </div>
 
-	<div class="main-content">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 post-layout">
-					<th:block th:each="post , inerStats : ${page.getContent()}">
-						<div class="row post-detail">
-							<div class="col-lg-2">
-								<figure class="post-author-avatar text-center">
-									<img th:src="@{/images/demo.jpg}" alt="Nguyễn Văn Mạnh" />
-								</figure>
-							</div>
-							<div class="col-lg-10">
+    </div>
+</div>
+
+
+<div id="post-filters">
+    <div class="container filters-row">
+        <div class="row">
+
+            <ul class="nav nav-tabs bg-inverse">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">MỚI NHẤT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">XEM NHIỀU NHẤT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">XU THẾ</a>
+                </li>
+                <li class="nav-item" sec:authorize="isAuthenticated()">
+                    <a class="nav-link" href="#">ĐANG THEO DÕI</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<div class="main-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 post-layout">
+                <th:block th:each="post , inerStats : ${page.getContent()}">
+                    <div class="row post-detail">
+                        <div class="col-lg-2">
+                            <figure class="post-author-avatar text-center">
+                                <img th:src="@{/images/demo.jpg}" alt="Nguyễn Văn Mạnh"/>
+                            </figure>
+                        </div>
+                        <div class="col-lg-10">
 								<span class="post-author-name"> <a
-									href="https://viblo.asia/u/manhnv118" class="secondary-link"
-									th:text="${post.getUser().getName()}"></a> <b
-									class="text-muted"> <span data-toggle="tooltip"
-										data-placement="bottom" title=""
-										data-original-title="Mar 18th, 2017 16:45:24">2 hours
+                                        href="https://viblo.asia/u/manhnv118" class="secondary-link"
+                                        th:text="${post.getUser().getName()}"></a> <b
+                                        class="text-muted"> <span data-toggle="tooltip"
+                                                                  data-placement="bottom" title=""
+                                                                  data-original-title="Mar 18th, 2017 16:45:24">2 hours
 											ago</span>
-										<button data-toggle="tooltip" data-placement="bottom" title=""
-											data-clipboard-text="https://viblo.asia/manhnv118/posts/eW65GYWOZDO"
-											class="btn btn-copy btn-link no-padding ml-05"
-											data-original-title="Copy URL">
+										<a data-toggle="tooltip" data-placement="bottom" title=""
+                                           data-clipboard-text="https://viblo.asia/manhnv118/posts/eW65GYWOZDO"
+                                           data-original-title="Copy URL">
 											<i aria-hidden="true" class="fa fa-link"></i>
-										</button>
+										</a>
 								</b>
 								</span>
 
-								<div class="post-title">
-									<b th:text="${post.title}"></b>
-								</div>
-								<div class="tag-list">
-									<th:block th:each="tag,inerStats :${post.getTags()}">
-										<button class="btn btn-info" th:text="${tag.name}"></button>
-									</th:block>
-								</div>
-								<div class="small-icons">
-									<i class="fa fa-eye"></i><span th:text="${post.countViews}"></span>
-									<i class="fa fa-paperclip"></i><span
-										th:text="${post.countViews}"></span> <i class="fa fa-comments"></i><span
-										th:text="${post.countViews}"></span>
-								</div>
-								<div class="vote-icons">
-									<i aria-hidden="true" class="fa fa-caret-up "></i> <i
-										aria-hidden="true" class="fa fa-caret-down "></i> <span
-										th:text="${post.points}"></span>
-								</div>
+                            <div class="post-title">
+                                <b th:text="${post.title}"></b>
+                            </div>
+                            <div class="tag-list">
+                                <th:block th:each="tag,inerStats :${post.getTags()}">
+                                    <button class="btn btn-info btn-sm" th:text="${tag.name}"></button>
+                                </th:block>
+                            </div>
+                            <div class="small-icons">
+                                <i class="fa fa-eye"></i><span th:text="${post.countViews}"></span>
+                                <i class="fa fa-paperclip"></i><span
+                                    th:text="${post.countViews}"></span> <i class="fa fa-comments"></i><span
+                                    th:text="${post.countViews}"></span>
+                            </div>
+                            <div class="vote-icons">
+                                <i aria-hidden="true" class="fa fa-caret-up "></i> <i
+                                    aria-hidden="true" class="fa fa-caret-down "></i> <span
+                                    th:text="${post.points}"></span>
+                            </div>
 
-							</div>
-						</div>
-						<div class="horizontal-line"></div>
-					</th:block>
-				</div>
-				<div class="col-lg-4 author-layout">
-					<div class="row">
+                        </div>
+                    </div>
+                    <div class="horizontal-line"></div>
+                </th:block>
+            </div>
+            <div class="col-lg-4 author-layout">
+                <div class="row">
 						<span><p class="text-center">
 								<b>TÁC GIẢ NỔI BẬT</b>
 							</p>
 							<div class="horizontal-line"></div></span>
-					</div>
-					<div class=" hot-author-detail" th:each="hotAuthor:${hotAuthors}">
-						<div class="row">
-							<div class="col-lg-4 hot-author-detail-avatar">
-								<img th:src="@{/images/demo.jpg}" />
+                </div>
+                <div class=" hot-author-detail" th:each="hotAuthor:${hotAuthors}">
+                    <div class="row">
+                        <div class="col-lg-4 hot-author-detail-avatar">
+                            <img th:src="@{/images/demo.jpg}"/>
 
-							</div>
-							<div class="col-lg-8 hot-author-detail-information">
-								<div class="hot-author-detail-user-name">
-									<a th:href="www.google.com" th:text="${hotAuthor.getName()}"></a><br />
-									<span th:text="${hotAuthor.getEmail()}"></span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-4">
-								<button class="btn btn-primary">Follow</button>
-							</div>
-							<div class="log-lg-8">
-								<div class="hot-author-detail-user-stats">
-									<i aria-hidden="true" class="fa fa-star"></i> <span
-										th:text="${hotAuthor.reputation}"></span> <i
-										aria-hidden="true" class="fa fa-user-plus"></i> <span
-										th:text="${hotAuthor.countFollows}"></span> <i
-										aria-hidden="true" class="fa fa-pencil"></i> <span
-										th:text="${hotAuthor.countPosts}"></span>
-								</div>
-							</div>
-						</div>
-						<div class="horizontal-line"></div>
-					</div>
-					<div class="row">
+                        </div>
+                        <div class="col-lg-8 hot-author-detail-information">
+                            <div class="hot-author-detail-user-name">
+                                <a th:href="www.google.com" th:text="${hotAuthor.getName()}"></a><br/>
+                                <span th:text="${hotAuthor.getEmail()}"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <button class="btn btn-primary btn-sm">Follow</button>
+                        </div>
+                        <div class="log-lg-8">
+                            <div class="hot-author-detail-user-stats">
+                                <i aria-hidden="true" class="fa fa-star"></i> <span
+                                    th:text="${hotAuthor.reputation}"></span> <i
+                                    aria-hidden="true" class="fa fa-user-plus"></i> <span
+                                    th:text="${hotAuthor.countFollows}"></span> <i
+                                    aria-hidden="true" class="fa fa-pencil"></i> <span
+                                    th:text="${hotAuthor.countPosts}"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-line"></div>
+                </div>
+                <div class="row">
 						<span><p class="text-center">
 								<b>BÀI VIẾT NỔI BẬT</b>
 							</p>
 							<div class="horizontal-line"></div></span>
 
-						<div class="row hot-posts" th:each="hotPost:${hotPosts}">
-							<div class="col-lg-12 hot-posts-title">
-								<span><strong th:text="${hotPost.title}"></strong></span>
-							</div>
+                    <div class="row hot-posts" th:each="hotPost:${hotPosts}">
+                        <div class="col-lg-12 hot-posts-title">
+                            <span><strong th:text="${hotPost.title}"></strong></span>
+                        </div>
 
-							<div class="col-lg-12 hot-posts-detail-user">
-								<div class="row">
-									<div class="col-lg-12 hot-posts-detail-user-name">
-										<span><strong th:text="${hotPost.getUser().getName()}"></strong></span>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-lg-12 hot-posts-detail-user-stats">
-										<div class="small-icons " style="display: inline">
-											<i class="fa fa-eye"></i><span
-												th:text="${hotPost.countViews}"></span> <i
-												class="fa fa-paperclip"></i><span
-												th:text="${hotPost.countViews}"></span><i
-												class="fa fa-comments"></i><span
-												th:text="${hotPost.countViews}"></span>
-										</div>
-										<div class="vote-icons"
-											style="display: inline; text-align: right">
-											<i aria-hidden="true" class="fa fa-caret-up "></i> <i
-												aria-hidden="true" class="fa fa-caret-down "></i> <span
-												th:text="${hotPost.points}"></span>
-										</div>
-									</div>
-								</div>
-								<div class="horizontal-line"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                        <div class="col-lg-12 hot-posts-detail-user">
+                            <div class="row">
+                                <div class="col-lg-12 hot-posts-detail-user-name">
+                                    <span><strong th:text="${hotPost.getUser().getName()}"></strong></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 hot-posts-detail-user-stats">
+                                    <div class="small-icons " style="display: inline">
+                                        <i class="fa fa-eye"></i><span
+                                            th:text="${hotPost.countViews}"></span> <i
+                                            class="fa fa-paperclip"></i><span
+                                            th:text="${hotPost.countViews}"></span><i
+                                            class="fa fa-comments"></i><span
+                                            th:text="${hotPost.countViews}"></span>
+                                    </div>
+                                    <div class="vote-icons"
+                                         style="display: inline; text-align: right">
+                                        <i aria-hidden="true" class="fa fa-caret-up "></i> <i
+                                            aria-hidden="true" class="fa fa-caret-down "></i> <span
+                                            th:text="${hotPost.points}"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="horizontal-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+        <div th:replace="pagination::pagination"></div>
+    </div>
+    <div class="col-lg-3"></div>
+</div>
 
-	<center>
-		<div th:replace="pagination::pagination"></div>
-	</center>
 
-	<footer th:replace="master::footer"></footer>
 
+<footer th:replace="master::footer"></footer>
 </body>
 </html>

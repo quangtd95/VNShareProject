@@ -1,91 +1,174 @@
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<th:block th:include="master::head"></th:block>
-<title>Đăng nhập</title>
+    <th:block th:replace="master::head">
+    </th:block>
+    <title>Đăng nhập</title>
 </head>
 <body>
-	<div th:replace="master::header"></div>
-	<div th:replace="master::modal_contact"></div>
-	<div class="container">
+<header th:replace="master::header"></header>
+<div th:replace="master::modal_contact"></div>
+<!--
 
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<div th:if="${success}"
-					class="row alert alert-success alert-dismissible">
-					<button type="button" class="close" data-dismiss="alert"
-						aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					<span th:text="${success}"></span>
-				</div>
-				<div th:if="${param.error}"
-					class="row alert alert-danger alert-dismissible">
-					<button type="button" class="close" data-dismiss="alert"
-						aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					<span>Sai email hoặc mật khẩu</span>
-				</div>
-				<div th:if="${logout}"
-					class="row alert alert-info alert-dismissible">
-					<button type="button" class="close" data-dismiss="alert"
-						aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					<span th:text="${logout}"></span>
-				</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-10">
+            <div th:if="${error}"
+                 class="row alert alert-danger alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <center>
+                    <span><strong>Lỗi:</strong></span><span th:text="${error}"></span>
+                </center>
+            </div>
 
-				<div class="panel panel-default">
-					<div class="panel-heading">Đăng nhập</div>
-					<div class="panel-body">
-						<form class="form-horizontal" role="form" method="POST"
-							th:action="@{/login}">
-							<div class="form-group">
-								<label for="email" class="col-md-4 control-label">Địa
-									chỉ email</label>
-								<div class="col-md-6">
-									<input id="email" type="email" class="form-control"
-										name="email" value="" required="true" autofocus="true" /> <span
-										class="help-block"> <strong></strong>
+            <div class="panel panel-default">
+                <div class="panel-heading">Đăng ký</div>
+                <div class="panel-body">
+
+                    <form role="form" data-toggle="validator" class="form-horizontal" method="POST" action="#"
+                          onsubmit="return check()"
+                          th:action="@{/register}" th:object="${user}">
+                        <input type="hidden" th:field="*{id}"/>
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">Tên</label>
+                            <div class="col-md-6">
+                                <input th:field="*{name}" id="name" type="text" placeholder="name"
+                                       class="form-control" name="name" value="" required="true"
+                                       autofocus="true"/> <span class="help-block"> <strong></strong>
 									</span>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="password" class="col-md-4 control-label">Mật
-									khẩu</label>
-								<div class="col-md-6">
-									<input id="password" type="password" class="form-control"
-										name="password" required="true" /> <span class="help-block">
-										<strong></strong>
+                            </div>
+                        </div>
+
+                        <div
+                                class="form-group">
+                            <label for="email" class="col-md-4 control-label">Địa
+                                chỉ email</label>
+
+                            <div class="col-md-6">
+                                <input th:field="*{email}" id="email" type="email" placeholder="email"
+                                       class="form-control" name="email" value="" required="true"/>
+									<span class="help-block"> <strong></strong>
 									</span>
-								</div>
-							</div>
+                            </div>
+                        </div>
 
-							<div class="form-group">
-								<div class="col-md-6 col-md-offset-4">
-									<div class="checkbox">
-										<label> <input type="checkbox" name="remember" /> Ghi
-											nhớ
-										</label>
-									</div>
-								</div>
-							</div>
+                        <div class="form-group">
+                            <label for="password" class="col-md-4 control-label">Mật
+                                khẩu</label>
 
-							<div class="form-group">
-								<div class="col-md-8 col-md-offset-4">
-									<button type="submit" class="btn btn-primary">Đăng
-										nhập</button>
+                            <div class="col-md-6">
+                                <input th:field="*{password}" type="password" data-minlength="6" class="form-control"
+                                       id="inputPassword" placeholder="Password" required="true"/>
+                            </div>
+                            <div class="help-block with-errors"></div>
+                        </div>
 
-									<a class="btn btn-link" th:href="@{/forgotpassword}">
-										Quên mật khẩu? </a>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                        <div class="form-group">
+                            <label for="password-confirm" class="col-md-4 control-label">Nhập
+                                lại mật khẩu</label>
+
+                            <div class="col-md-6">
+                                <input type="password" class="form-control" id="inputPasswordConfirm"
+                                       placeholder="Confirm" required="true"/>
+                                <div class="help-block with-errors" id="message"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <button id="btnSubmit" type="submit" class="btn btn-primary">Đăng Ký</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div th:if="${success}"
+                 class="row alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <span th:text="${success}"></span>
+            </div>
+            <div th:if="${param.error}"
+                 class="row alert alert-danger alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <span>Sai email hoặc mật khẩu</span>
+            </div>
+            <div th:if="${logout}"
+                 class="row alert alert-info alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <span th:text="${logout}"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <form role="form" method="POST"
+                  th:action="@{/login}">
+                <!--Form with header-->
+                <div class="card">
+                    <div class="card-block">
+                        <!--Header-->
+                        <div class="text-center">
+                            <h3><i class="fa fa-pencil"></i> ĐĂNG NHẬP</h3>
+                            <hr class="mt-2 mb-2"/>
+                        </div>
+
+                        <!--Body-->
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix"></i>
+                            <input type="email" id="form2" name="email" class="form-control validate" required="true"/>
+                            <label for="form2">Your email</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-lock prefix"></i>
+                            <input type="password" id="form4" name="password" class="form-control validate" required="true"/>
+                            <label for="form4">Your password</label>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-deep-purple">Login</button>
+                        </div>
+
+                    </div>
+
+                    <!--Footer-->
+                    <div class="modal-footer">
+                        <div class="options">
+                            <p>Not a member? <a th:href="@{/register}">Sign Up</a></p>
+                            <p>Forgot <a th:href="@{/forgotpassword}">Password?</a></p>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/Form with header-->
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer th:replace="master::footer"></footer>
 </body>
-<div th:replace="master::footer"></div>
 </html>

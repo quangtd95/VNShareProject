@@ -2,34 +2,30 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <!-- Pagination Bar -->
-<div th:fragment='pagination'>
-    <ul class='pagination pagination-centered'>
-      <li th:class="${page.firstPage}? 'disabled' : ''">
-        <span th:if='${page.firstPage}'>← First</span>
-        <a th:if='${not page.firstPage}' th:href='@{${page.url}(page=0,size=${page.size})}'>← First</a>
-      </li>
-      
-       <li th:class="${page.hasPreviousPage}? '' : 'disabled'">
-        <span th:if='${not page.hasPreviousPage}'>«</span>
-        <a th:if='${page.hasPreviousPage}' th:href='@{${page.url}(page=${page.currentNumber-1},size=${page.size})}' title='Go to previous page'>«</a>
-      </li>
-      
-      <li th:each='item : ${page.items}' th:class="${item.current}? 'active' : ''">
-        <span th:if='${item.current}' th:text='${item.number}'>1</span>
-        <a th:if='${not item.current}' th:href='@{${page.url}(page=${item.number},size=${page.size})}'><span th:text='${item.number}'>1</span></a>
-      </li>
-      
-      <li th:class="${page.hasNextPage}? '' : 'disabled'">
-        <span th:if='${not page.hasNextPage}'>»</span>
-        <a th:if='${page.hasNextPage}' th:href='@{${page.url}(page=${page.currentNumber+1},size=${page.size})}' title='Go to next page'>»</a>
-      </li>
-      
-      <li th:class="${page.lastPage}? 'disabled' : ''">
-        <span th:if='${page.lastPage}'>Last →</span>
-        <a th:if='${not page.lastPage}' th:href='@{${page.url}(page=${page.totalPages},size=${page.size})}'>Last →</a>
-      </li>
-      
+
+<nav th:fragment="pagination">
+    <ul class="pagination pagination-lg">
+        <li th:class="page-item " th:classappend="${page.firstPage}? 'disabled' : ''">
+            <span th:class="page-link" th:if='${page.firstPage}'><b th:class="material-icons">skip_previous</b></span>
+            <a th:class="page-link" th:if='${not page.firstPage}' th:href='@{${page.url}(page=0,size=${page.size})}'><b th:class="material-icons">skip_previous</b></a>
+        </li>
+        <li th:class="page-item" th:classappend="${page.hasPreviousPage}? '' : 'disabled'">
+            <span th:class="page-link" th:if='${not page.hasPreviousPage}'><b  th:class="material-icons">chevron_left</b></span>
+            <a th:class="page-link" th:if='${page.hasPreviousPage}' th:href='@{${page.url}(page=${page.currentNumber-1},size=${page.size})}' title='Go to previous page'><span th:class="material-icons ">chevron_left</span></a>
+        </li>
+        <li th:each='item : ${page.items}' th:class="page-item" th:classappend="${item.current}? 'active' : ''">
+            <span th:class="page-link" th:if='${item.current}' th:text='${item.number}'>1</span>
+            <a th:class="page-link" th:if='${not item.current}' th:href='@{${page.url}(page=${item.number},size=${page.size})}'><span th:text='${item.number}'>1</span></a>
+        </li>
+        <li th:class="page-item " th:classappend="${page.hasNextPage}? '' : 'disabled'">
+            <span th:class="page-link"  th:if='${not page.hasNextPage}'><b th:class="material-icons">chevron_right</b></span>
+            <a th:class="page-link" th:if='${page.hasNextPage}' th:href='@{${page.url}(page=${page.currentNumber+1},size=${page.size})}' title='Go to next page'><span th:class="material-icons">chevron_right</span></a>
+        </li>
+        <li th:class="page-item " th:classappend="${page.lastPage}? 'disabled' : ''">
+            <span th:class="page-link"  th:if='${page.lastPage}'><b th:class="material-icons">skip_next</b></span>
+            <a th:class="page-link" th:if='${not page.lastPage}' th:href='@{${page.url}(page=${page.totalPages},size=${page.size})}'><b th:class="material-icons">skip_next</b></a>
+        </li>
     </ul>
-</div>
+</nav>
 
 </html>

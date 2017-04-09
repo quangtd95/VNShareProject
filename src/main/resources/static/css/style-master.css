@@ -13,7 +13,7 @@
   color: white; }
 
 body {
-  padding-top: 70px; }
+  padding-top: 90px; }
 
 .btnsearch {
   padding: 6px;
@@ -91,6 +91,23 @@ body {
 
 .btn-register {
   margin-left: 10px; }
+
+a.back-to-top {
+  display: none;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  background: #009688 url("../images/up-arrow.png") no-repeat center 43%;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px; }
+
+a:hover.back-to-top {
+  background-color: #000; }
 
 /*# sourceMappingURL=style-app.css.map */
 

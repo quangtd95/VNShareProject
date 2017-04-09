@@ -1,6 +1,3 @@
-/**
- * Created by djwag on 4/2/2017.
- */
 $(document).ready(function () {
     $("#form-resetpassword").submit(function (event) {
         event.preventDefault();
