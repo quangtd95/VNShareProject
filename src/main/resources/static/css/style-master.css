@@ -83,4 +83,12 @@ body {
 .btn-register {
   margin-left: 10px; }
 
+.horizontal-line {
+  height: 1px;
+  background-color: grey;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style-app.css.map */

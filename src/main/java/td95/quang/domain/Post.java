@@ -53,5 +53,8 @@ public class Post {
 			inverseJoinColumns = @JoinColumn(name="tag_id")
 			)
 	private Set<Tag> tags;
+	
+	@Column(name="image_cover")
+	private String imageCover;
 
 }

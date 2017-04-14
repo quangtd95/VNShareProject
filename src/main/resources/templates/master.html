@@ -7,7 +7,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-
         <!-- JQuery -->
         <script
                 src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
@@ -33,12 +32,15 @@
         <!-- Styles -->
         <link href="../static/css/font-awesome.min.css"
               th:href="@{/css/font-awesome.min.css}" rel="stylesheet"/>
+    	<!-- font material -->          
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"/>
         <link href="../static/css/master.css" th:href="@{/css/master.css}"
               rel="stylesheet"/>
         <link href="../static/css/style-master.css"
               th:href="@{/css/style-master.css}" rel="stylesheet"/>
 
-        <script src="./static/js/master.js" th:src="@{js/master.js}"></script>
+        <script src="../static/js/master.js" th:src="@{/js/master.js}"></script>
     </th:block>
 </head>
 <body>
@@ -102,7 +104,7 @@
                     </div>
 
                     <div class="nav navbar-nav" sec:authorize="isAuthenticated()">
-                        <li><a href="#"> <i class="fa fa-pencil"
+                        <li><a th:href="@{/post}"> <i class="fa fa-pencil"
                                             style="font-size: 1.5em;"></i></a></li>
 
                         <li class="dropdown"><a href="#" class="dropdown-toggle"

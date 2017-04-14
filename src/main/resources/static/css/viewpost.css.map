@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAW;EACT,WAAW,EAAE,cAAc;EAEzB,sBAAG;IACD,OAAO,EAAE,YAAY;IACrB,UAAU,EAAE,GAAG;IACf,aAAa,EAAE,GAAG;IAClB,KAAK,EAAE,KAAK;IACZ,MAAM,EAAE,KAAK;IACb,OAAO,EAAE,IAAI;;AAKnB,gBAAiB;EACf,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM",
+"sources": ["../scss/viewpost.scss"],
+"names": [],
+"file": "viewpost.css"
+}

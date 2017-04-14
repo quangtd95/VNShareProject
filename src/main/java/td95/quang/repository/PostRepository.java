@@ -8,4 +8,6 @@ import td95.quang.domain.Post;
 
 public interface PostRepository  extends JpaRepository<Post,Integer>{
 	Page<Post> findAll(Pageable pageable);
+
+	
 }

@@ -1,0 +1,15 @@
+.user-info {
+  border-left: 1px solid grey; }
+  .user-info .avatar img {
+    display: inline-block;
+    flex-basis: 25%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 10px; }
+
+.vertical-center {
+  display: flex;
+  align-items: center; }
+
+/*# sourceMappingURL=viewpost.css.map */

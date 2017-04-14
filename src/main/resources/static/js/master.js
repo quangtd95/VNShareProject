@@ -1,11 +1,11 @@
 $(document).ready(function() {
 	$("#form_contact").submit(function(event) {
 		event.preventDefault();
-		call_ajax_to_submit();
+		call_ajax_to_send_contact();
 	});
 });
 
-function call_ajax_to_submit() {
+function call_ajax_to_send_contact() {
 
 	var contact = {
 		name : $('#modal-contact-name').val(),

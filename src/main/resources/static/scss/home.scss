@@ -95,14 +95,6 @@
   font-size: 20px;
 }
 
-.horizontal-line {
-  height: 1px;
-  background-color: grey;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  width: 100%;
-}
-
 .hot-author-detail {
   position: relative;
   text-align: center;
@@ -133,6 +125,15 @@
 .hot-posts {
   margin-left: 20px;
 }
+.dapibus {
+  background: #fff;
+  padding: 2em 1.3em;
+  margin-top:3px;
+  margin-bottom: 3px;
+  box-shadow: 0px 1px 5px -1px rgba(104, 123, 144, 0.31);
+  border-radius: 0.3em;
+}
+
 
 
 

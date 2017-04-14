@@ -4,10 +4,13 @@ import java.util.List;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 
 import td95.quang.domain.Post;
 
 public interface PostService {
 	Page<Post> findAll(Pageable pageable);
 	List<Post> getHotPosts();
+	Post findById(int id);
+	void save(Post post);
 }
