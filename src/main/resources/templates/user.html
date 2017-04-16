@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="master::head"></th:block>
+    <link th:href="@{/css/user.css}" rel="stylesheet" type="text/css"/>
+</head>
+<body style="background-color: white">
+<nav th:replace="master::header"></nav>
+<div th:replace="master::modal_contact"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="tabbable" id="tabs-883465">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#panel-posts" data-toggle="tab">Bài viết đã đăng</a>
+                    </li>
+                    <li>
+                        <a href="#panel-drafts" data-toggle="tab">Nháp</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="panel-posts">
+                        <th:block th:each="post,inerStats : ${user.posts}">
+                           <div class="row">
+                                <div class="col-lg-1">
+                                    <img th:src="${post.imageCover}"/>
+                                </div>
+                               <div class="col-lg-11" style="background-color: grey;height: 4px;">
+
+                               </div>
+                           </div>
+                        </th:block>
+                    </div>
+                    <div class="tab-pane" id="panel-drafts">
+                        <p>
+                            Howdy, I'm in Section 2.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <b>PROFILE</b>
+            </div>
+            <div class="row">
+                <div class="horizontal-line"/>
+            </div>
+            <div class="row">
+                <div class="row vertical-center">
+                    <div class="col-lg-4 ">
+                        <img class="avatar" th:src="${user.avatar}"/>
+                    </div>
+                    <div class="col-lg-8">
+                        <a class="name-user" href="#"><strong th:text="${user.name}"></strong></a>
+                    </div>
+                </div>
+            </div>
+            <div class="user-stats">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table width="100%">
+                            <tr>
+                                <th>Reputations</th>
+                                <th th:text="${user.reputation}"></th>
+                            </tr>
+                            <tr>
+                                <th>Following Tags</th>
+                                <th th:text="${user.countTags}"></th>
+                            </tr>
+                            <tr>
+                                <th>Following Users</th>
+                                <th th:text="${user.countFollowings}"></th>
+                            </tr>
+                            <tr>
+                                <th>Followers</th>
+                                <th th:text="${user.countFollowers}"></th>
+                            </tr>
+                            <tr>
+                                <th>Post</th>
+                                <th th:text="${user.countPosts}"></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-4">
+                    <a><button class="btn btn-danger" style="width: 100px;">Edit</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer th:replace="master::footer"></footer>
+
+</body>
+</html>

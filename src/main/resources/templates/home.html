@@ -56,63 +56,15 @@
                             <a th:href="@{/post/}+${post.id}">
                                 <h2><p th:text="${post.title}"></p></h2>
                             </a>
-                            <p class="adm">Posted by <a href="#"><b th:text="${post.user.name}"></b></a></p>
+                            <p class="adm">Posted by <a th:href="@{/u/}+${post.user.id}"><b th:text="${post.user.name}"></b></a></p>
                             <a th:href="@{/post/}+${post.id}"><img th:src="@{/images/demo.jpg}" class="img-responsive"
                                                                    alt=""/></a>
                             <p style="width: 200px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;"
                                th:text="${post.content}"></p>
-                            <a href="details.html" class="link">Read More</a>
-                        </div>
-                    </div>
-                    <!--
-                    <div class="row post-detail">
-                        <div class="col-lg-2">
-                            <figure class="post-author-avatar text-center">
-                                <img th:src="@{/images/demo.jpg}" alt="Nguyễn Văn Mạnh" />
-                            </figure>
-                        </div>
-                        <div class="col-lg-10">
-                            <span class="post-author-name"> <a
-                                href="https://viblo.asia/u/manhnv118" class="secondary-link"
-                                th:text="${post.getUser().getName()}"></a> <b
-                                class="text-muted"> <span data-toggle="tooltip"
-                                    data-placement="bottom" title=""
-                                    data-original-title="Mar 18th, 2017 16:45:24">2 hours
-                                        ago</span>
-                                    <button data-toggle="tooltip" data-placement="bottom" title=""
-                                        data-clipboard-text="https://viblo.asia/manhnv118/posts/eW65GYWOZDO"
-                                        class="btn btn-copy btn-link no-padding ml-05"
-                                        data-original-title="Copy URL">
-                                        <i aria-hidden="true" class="fa fa-link"></i>
-                                    </button>
-                            </b>
-                            </span>
-
-                            <div class="post-title">
-                                <b th:text="${post.title}"></b>
-                            </div>
-                            <div class="tag-list">
-                                <th:block th:each="tag,inerStats :${post.getTags()}">
-                                    <button class="btn btn-info" th:text="${tag.name}"></button>
-                                </th:block>
-                            </div>
-                            <div class="small-icons">
-                                <i class="fa fa-eye"></i><span th:text="${post.countViews}"></span>
-                                <i class="fa fa-paperclip"></i><span
-                                    th:text="${post.countViews}"></span> <i class="fa fa-comments"></i><span
-                                    th:text="${post.countViews}"></span>
-                            </div>
-                            <div class="vote-icons">
-                                <i aria-hidden="true" class="fa fa-caret-up "></i> <i
-                                    aria-hidden="true" class="fa fa-caret-down "></i> <span
-                                    th:text="${post.points}"></span>
-                            </div>
-
+                            <a th:href="@{/post/}+${post.id}" class="link">Read More</a>
                         </div>
                     </div>
 
-                    <div class="horizontal-line"></div>
-                    -->
                 </th:block>
             </div>
             <div class="col-lg-3 author-layout">
@@ -144,7 +96,7 @@
                                 <i aria-hidden="true" class="fa fa-star"></i> <span
                                     th:text="${hotAuthor.reputation}"></span> <i
                                     aria-hidden="true" class="fa fa-user-plus"></i> <span
-                                    th:text="${hotAuthor.countFollows}"></span> <i
+                                    th:text="${hotAuthor.countFollowers}"></span> <i
                                     aria-hidden="true" class="fa fa-pencil"></i> <span
                                     th:text="${hotAuthor.countPosts}"></span>
                             </div>

@@ -10,11 +10,13 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.Type;
 
 import lombok.Data;
+
 @Data
 @Entity
 @Table(name = "user")
@@ -33,9 +35,9 @@ public class User {
 	@Column(name = "password", nullable = false)
 	private String password;
 
-	@Column(name= "avatar")
+	@Column(name = "avatar")
 	private String avatar;
-	
+
 	@Column(name = "reputation")
 	private int reputation;
 
@@ -50,17 +52,32 @@ public class User {
 	@Type(type = "timestamp")
 	private Date updatedAt;
 
-	@ManyToMany
-	@JoinTable(
-			name = "user_role", 
-			joinColumns = @JoinColumn(name = "user_id"), 
-			inverseJoinColumns = @JoinColumn(name = "role_id"))
-	private Set<Role> roles;
 	
-	@Column(name="count_follows")
-	private int countFollows;
-	
-	@Column(name="count_posts")
+	@Column(name = "count_followers")
+	@Type(type="int")
+	private int countFollowers;
+
+	@Column(name = "count_posts")
+	@Type(type="int")
 	private int countPosts;
 
+	@Column(name = "count_tags")
+	@Type(type="int")
+	private int countTags;
+
+	@Column(name = "count_followings")
+	@Type(type="int")
+	private int countFollowings;
+	
+	@ManyToMany
+	@JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
+	private Set<Role> roles;
+
+	@ManyToMany
+	@JoinTable(name = "user_tag", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "tag_id"))
+	private Set<Tag> tags;
+	
+	@OneToMany(mappedBy = "user")
+	private Set<Post> posts;
+	
 }

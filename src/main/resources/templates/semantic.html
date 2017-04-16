@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1"/>
-<title>Insert title here</title>
+	<th:block th:include="master::head"></th:block>
 </head>
 <body>
-<h1 th:text="${result}"></h1>
+	<form id="form-search" th:action="@{/semantic}">
+		<input id="input" placeHolder="search" />
+		<button type="submit">search</button>
+	</form>
+	<div th:if="${result}">
+		<h1 th:text="${result}"></h1>
+	</div>
+	<script th:src="@{/js/semantic.js}"></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.springframework.org/security/tags">
 <head>
     <th:block th:replace="master::head"></th:block>
     <title th:text="${post.title}"></title>
@@ -11,16 +12,18 @@
           type="text/css"/>
     <link rel="stylesheet" th:href="@{/css/viewpost.css}" href="../static/css/viewpost.css" type="text/css"/>
 </head>
-<body style="background-color: white">
+<body>
 <nav th:replace="master::header"></nav>
 <div th:replace="master::modal_contact"></div>
 <div class="container">
-    <div class="row">
-        <div class="col-lg-9">
+    <div class="row main-content">
+        <div class="col-lg-9 scrollit">
             <input type="text" hidden="true" th:id="content" th:value="${post.content}"/>
             <div class="row">
-                <div class="col-lg-12">
-                    <h1 th:text="${post.title}"></h1>
+                <div class="post-content">
+                    <div class="col-lg-12">
+                        <h1 th:text="${post.title}"></h1>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -37,13 +40,13 @@
             <div class="horizontal-line"></div>
             <div id="post-content" class="fr-view"></div>
         </div>
-        <div class="col-lg-3 user-info">
+        <div class="col-lg-3 user-info fixed">
             <div class="row vertical-center">
                 <div class="col-lg-4 avatar">
                     <img th:src="${post.user.avatar}"/>
                 </div>
                 <div class="col-lg-8">
-                    <a href="#"><strong th:text="${post.user.name}"></strong></a>
+                    <a th:href="@{/u/}+${post.user.id}"><strong th:text="${post.user.name}"></strong></a>
                 </div>
             </div>
             <div class="row">
@@ -51,25 +54,45 @@
                     <button class="btn btn-primary">Following</button>
                 </div>
                 <div class="col-lg-8">
-                	<div class="row">
-                	<div class="col-lg-4">
-                	<i class="material-icons">star_rate</i>
-                    <b th:text="${post.user.reputation}"></b>
-                	</div>
-                	<div class="col-lg-4">
-                	    <i class="material-icons">people</i>
-                    <b th:text="${post.user.countFollows}"></b>
-                	</div>
-                	<div class="col-lg-4">
-                	<i class="material-icons">create</i>
-                    <b th:text="${post.user.countPosts}"></b>
-                	</div>
-                	</div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <i class="material-icons">star_rate</i>
+                            <b th:text="${post.user.reputation}"></b>
+                        </div>
+                        <div class="col-lg-4">
+                            <i class="material-icons">people</i>
+                            <b th:text="${post.user.countFollowers}"></b>
+                        </div>
+                        <div class="col-lg-4">
+                            <i class="material-icons">create</i>
+                            <b th:text="${post.user.countPosts}"></b>
+                        </div>
+                    </div>
                 </div>
 
             </div>
+            <div class="row">
+                <div class="col-lg-12" style="text-align: center">
+                    <th:block th:if="${own==true}">
+                        <a th:href="@{/edit/}+${post.id}">
+                        <button class="btn btn-info" style="margin-top: 20px" >
+                            Chỉnh sửa bài viết
+                        </button>
+                        </a>
+                    </th:block>
+                </div>
+            </div>
         </div>
 
+    </div>
+    <div class="row relative-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4><b>Các bài viết khác của </b><a th:href="@{/}"><b th:text="${post.user.name}"></b></a></h4>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

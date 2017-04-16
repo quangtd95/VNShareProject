@@ -1,9 +1,12 @@
 package td95.quang.domain;
 
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -28,4 +31,7 @@ public class Tag {
 
 	@Column(name = "image")
 	private String image;
+
+	@ManyToMany(mappedBy = "tags")
+	private Set<User> users;
 }

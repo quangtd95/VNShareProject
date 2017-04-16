@@ -15,7 +15,7 @@ import javax.persistence.Table;
 
 import lombok.Data;
 
-@Data
+
 @Entity
 @Table(name = "post")
 public class Post {
@@ -57,4 +57,87 @@ public class Post {
 	@Column(name="image_cover")
 	private String imageCover;
 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public int getCountViews() {
+		return countViews;
+	}
+
+	public void setCountViews(int countViews) {
+		this.countViews = countViews;
+	}
+
+	public int getPoints() {
+		return points;
+	}
+
+	public void setPoints(int points) {
+		this.points = points;
+	}
+
+	public Date getCreatedAt() {
+		return createdAt;
+	}
+
+	public void setCreatedAt(Date createdAt) {
+		this.createdAt = createdAt;
+	}
+
+	public Date getUpdatedAt() {
+		return updatedAt;
+	}
+
+	public void setUpdatedAt(Date updatedAt) {
+		this.updatedAt = updatedAt;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public Set<Tag> getTags() {
+		return tags;
+	}
+
+	public void setTags(Set<Tag> tags) {
+		this.tags = tags;
+	}
+
+	public String getImageCover() {
+		return imageCover;
+	}
+
+	public void setImageCover(String imageCover) {
+		this.imageCover = imageCover;
+	}
+
+	
+
+	
 }
