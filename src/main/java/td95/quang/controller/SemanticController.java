@@ -19,7 +19,7 @@ import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.query.ResultSetFormatter;
 
-import td95.quang.domain.User;
+import td95.quang.entity.User;
 import td95.quang.service.UserService;
 
 @Controller

@@ -1,5 +1,9 @@
 package td95.quang.controller;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -19,11 +23,15 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import td95.quang.domain.Contact;
-import td95.quang.domain.Post;
-import td95.quang.domain.User;
+import com.ibm.icu.util.Calendar;
+
+import td95.quang.entity.Contact;
+import td95.quang.entity.Post;
+import td95.quang.entity.User;
 import td95.quang.service.PageWrapper;
 import td95.quang.service.PostService;
 import td95.quang.service.UserService;
@@ -35,10 +43,9 @@ public class AuthController {
 	private UserService userService;
 
 	@Autowired
-	private PostService postService;
-
-	@Autowired
 	private PasswordEncoder passwordEncoder;
+
+	private static String UPLOADED_FOLDER = "E://DOCUMENTS//TUHOCLACHINH//JAVA//servletProject//VNShareProject//src//main/resources//static//images//";
 
 	@GetMapping("/login")
 	public String login() {
@@ -69,13 +76,30 @@ public class AuthController {
 			return "register";
 		}
 		try {
+			MultipartFile file = user.getFile();
+			if (file.isEmpty()) {
+				redirect.addFlashAttribute("error", "Please select a file to upload");
+				return "redirect:/register";
+			}
+			// Get the file and save it somewhere
+			byte[] bytes = file.getBytes();
+			Path path = Paths.get(UPLOADED_FOLDER + file.getOriginalFilename());
+			Files.write(path, bytes);
+
+			user.setAvatar("/images/" + file.getOriginalFilename());
 			user.setPassword(passwordEncoder.encode(user.getPassword()));
+			user.setCreatedAt(Calendar.getInstance().getTime());
+			user.setUpdatedAt(Calendar.getInstance().getTime());
 			userService.save(user);
 			redirect.addFlashAttribute("success", "Đăng ký thành công");
 			return "redirect:/login";
 		} catch (org.springframework.dao.DataIntegrityViolationException e) {
 			e.printStackTrace();
 			redirect.addFlashAttribute("error", "Email đã được sử dụng");
+			return "redirect:/register";
+		} catch (IOException e) {
+			e.printStackTrace();
+			redirect.addFlashAttribute("error", "Lỗi Upload avatar");
 			return "redirect:/register";
 		}
 
@@ -90,22 +114,6 @@ public class AuthController {
 		}
 		redirectAttributes.addFlashAttribute("logout", "Bạn đã đăng xuất");
 		return "redirect:/login";
-	}
-
-	@GetMapping("/")
-	public String getHome(Pageable pageable, Model model) {
-		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-		if (auth != null) {
-			User user = userService.findOne(auth.getName());
-			model.addAttribute("user", user);
-		}
-		PageWrapper<Post> page = new PageWrapper<Post>(postService.findAll(pageable), "/");
-		model.addAttribute("page",page);
-		
-		model.addAttribute("hotAuthors", userService.getHotAuthors());
-		model.addAttribute("hotPosts",postService.getHotPosts());
-		model.addAttribute("contact",new Contact());
-		return "home";
 	}
 
 }

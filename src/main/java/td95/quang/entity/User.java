@@ -1,4 +1,4 @@
-package td95.quang.domain;
+package td95.quang.entity;
 
 import java.util.Date;
 import java.util.Set;
@@ -12,8 +12,10 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import org.hibernate.annotations.Type;
+import org.springframework.web.multipart.MultipartFile;
 
 import lombok.Data;
 
@@ -51,7 +53,6 @@ public class User {
 	@Column(name = "updated_at")
 	@Type(type = "timestamp")
 	private Date updatedAt;
-
 	
 	@Column(name = "count_followers")
 	@Type(type="int")
@@ -80,4 +81,9 @@ public class User {
 	@OneToMany(mappedBy = "user")
 	private Set<Post> posts;
 	
+	@Transient
+	private MultipartFile file;
+	
+	@Transient
+	private String newPassword;
 }

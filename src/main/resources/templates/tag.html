@@ -1,80 +1,87 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<th:block th:replace="master::head">
-</th:block>
-<link rel="stylesheet" href="../static/css/tags.css"
-	th:href="@{/css/tags.css}" type="text/css" />
-<title>Tag</title>
+    <th:block th:replace="master::head">
+    </th:block>
+    <link rel="stylesheet" href="../static/css/tags.css"
+          th:href="@{/css/tags.css}" type="text/css"/>
+    <title>Tag</title>
 </head>
 <body>
 
-	<div th:replace="master::header"></div>
-	<div th:replace="master::modal_contact"></div>
+<div th:replace="master::header"></div>
+<div th:replace="master::modal_contact"></div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-9">
-				<div class="row">
-					<div class="col-lg-4">
-						<h4>
-							<b>ALL TAGS </b><b th:text="${#lists.size(page.getContent())}"></b>
-						</h4>
-					</div>
-					<div class="col-lg-8">
-						<hr />
-					</div>
-				</div>
-			</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h4>
+                        <b>ALL TAGS </b><b th:text="${#lists.size(page.getContent())}"></b>
+                    </h4>
+                </div>
+                <div class="col-lg-8">
+                    <hr/>
+                </div>
+            </div>
+        </div>
 
-			<div class="col-lg-3">
-				<div class="row">
-					<label for="select" class="col-md-4 control-label text-center">Sort
-						by</label>
-					<div class="col-md-8">
-						<select id="select" class="form-control">
-							<option>Followers</option>
-							<option>Posts</option>
-						</select>
-					</div>
-				</div>
-			</div>
+        <div class="col-lg-3">
+            <div class="row">
+                <label for="select" class="col-md-4 control-label text-center">Sort
+                    by</label>
+                <div class="col-md-8">
+                    <select id="select" class="form-control">
+                        <option>Followers</option>
+                        <option>Posts</option>
+                    </select>
+                </div>
+            </div>
+        </div>
 
-		</div>
+    </div>
 
-		<div class="row">
+    <div class="row">
 
-			<div th:each="tag,iterStat : ${page.getContent()}" class="col-lg-4 tag-view">
-				<div class="row">
-					<div class="col-lg-4">
-						<img th:src="${tag.getImage()}" />
-					</div>
-					<div class="col-lg-8">
-						<h4 th:text="${tag.getName()}"></h4>
-						<div class="row">
-							<div class="col-lg-6">
-								<div>
+        <div th:each="tag,iterStat : ${page.getContent()}" class="col-lg-4 tag-view">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a th:href="@{/tag/}+${tag.id}"><img th:src="@{${tag.getImage()}}"/></a>
+                </div>
+                <div class="col-lg-8">
+                    <a th:href="@{/tag/}+${tag.id}"><h4 th:text="${tag.getName()}"></h4></a>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div>
 									<span class="tag-counter"><strong
-										th:text="${tag.getCountPost()}"></strong> posts</span> <br /> <span
-										class="tag-counter"><strong
-										th:text="${tag.getCountFollow()}"></strong> followers</span>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<button type="button" class="btn btn-danger">Follow</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+                                            th:text="${tag.getCountPost()}"></strong> posts</span> <br/> <span
+                                    class="tag-counter"><strong
+                                    th:text="${tag.getCountFollow()}"></strong> followers</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <th:block sec:authorize="hasRole('ROLE_ANONYMOUS')">
+                                <button type="button" class="btn btn-danger" disabled="true">Follow</button>
+                            </th:block>
+                            <th:block sec:authorize="isAuthenticated()">
+                                <th:block>
+                                <button type="button" class="btn btn-danger" id="btnFollow">Follow</button>
+                                </th:block>
+                            </th:block>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-		</div>
+    </div>
 
-	</div>
-	<center>
+</div>
+<center>
     <div th:replace="pagination::pagination"></div>
 </center>
 
-	<div th:replace="master::footer"></div>
+<div th:replace="master::footer"></div>
 </body>
 </html>

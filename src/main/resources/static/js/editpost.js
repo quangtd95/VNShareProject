@@ -7,17 +7,23 @@ $(document).ready(function () {
             'Bạn không có quyền chỉnh sửa bài viết!',
             'error');
     }
+    $("#form-post-image-cover").keyup(function() {
+        $("#imagePreview").attr("src",$('#form-post-image-cover').val());
+        console.log($('#form-post-image-cover').val());
+    });
     $('#form-post').submit(function (event) {
         event.preventDefault();
         call_ajax_to_update_post();
     });
+
+
 });
 
 function  call_ajax_to_update_post() {
     var post = {
         id : $('#form-post-id').val(),
         title : $('#form-post-title').val(),
-        image_cover : $('#form-post-image-cover').val(),
+        imageCover : $('#form-post-image-cover').val(),
         content : $('#form-post-content').val()
     };
     console.log(post);

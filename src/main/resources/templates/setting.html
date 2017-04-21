@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="master::head"></th:block>
+    <link th:href="@{/css/setting.css}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<nav th:replace="master::header"></nav>
+<div th:replace="master::modal_contact"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <th:block th:fragment="setting-menu">
+                <link th:href="@{/css/setting.css}" rel="stylesheet" type="text/css"/>
+                <table class="table table-bordered table-menu" >
+                    <tr>
+                        <th><i class="fa fa-user"></i></th>
+                        <th><a th:href="@{/setting/profile}" id="settingProfile">Profile</a></th>
+                    </tr>
+                    <tr>
+                        <th><i class="fa fa-facebook"></i></th>
+                        <th>Social</th>
+                    </tr>
+                    <tr>
+                        <th><i class="fa fa-key"></i></th>
+                        <th><a th:href="@{/setting/password}" id="settingPassword">Password</a></th>
+                    </tr>
+                    <tr>
+                        <th><i class="fa fa-bell"></i></th>
+                        <th>Notification</th>
+                    </tr>
+                </table>
+
+            </th:block>
+        </div>
+        <div class="col-lg-8">
+
+        </div>
+    </div>
+</div>
+<footer th:replace="master::footer"></footer>
+</body>
+</html>

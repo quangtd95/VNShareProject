@@ -37,9 +37,9 @@
                 <li class="filters-item "><a href=""><b>MỚI NHẤT</b></a></li>
                 <li class="filters-item"><a href=""><b>XEM NHIỀU NHẤT</b></a></li>
                 <li class="filters-item"><a href=""><b>XU THẾ</b></a></li>
-                <li class="filters-item" sec:authorize="isAuthenticated()"><a
+                <!--<li class="filters-item" sec:authorize="isAuthenticated()"><a
                         id="following"><b>ĐANG THEO DÕI</b></a></li>
-
+-->
 
             </ul>
         </div>
@@ -57,10 +57,13 @@
                                 <h2><p th:text="${post.title}"></p></h2>
                             </a>
                             <p class="adm">Posted by <a th:href="@{/u/}+${post.user.id}"><b th:text="${post.user.name}"></b></a></p>
-                            <a th:href="@{/post/}+${post.id}"><img th:src="@{/images/demo.jpg}" class="img-responsive"
+                            <a th:href="@{/post/}+${post.id}"><img th:src="@{${post.imageCover}}" class="img-responsive"
                                                                    alt=""/></a>
-                            <p style="width: 200px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;"
-                               th:text="${post.content}"></p>
+                           
+                               <th:block th:each="tag: ${post.tags}">
+                                   <a th:href="@{/tag/}+${tag.id}"> <button class="btn btn-info"  th:text="${tag.name}"></button></a>
+                               </th:block>
+                           <br/>
                             <a th:href="@{/post/}+${post.id}" class="link">Read More</a>
                         </div>
                     </div>
@@ -77,19 +80,19 @@
                 <div class=" hot-author-detail" th:each="hotAuthor:${hotAuthors}">
                     <div class="row">
                         <div class="col-lg-4 hot-author-detail-avatar">
-                            <img th:src="@{/images/demo.jpg}"/>
+                            <img th:src="@{${hotAuthor.avatar}}"/>
 
                         </div>
                         <div class="col-lg-8 hot-author-detail-information">
                             <div class="hot-author-detail-user-name">
-                                <a th:href="www.google.com" th:text="${hotAuthor.getName()}"></a><br/>
+                                <a th:href="@{/u/}+${hotAuthor.getId()}" th:text="${hotAuthor.getName()}"></a><br/>
                                 <span th:text="${hotAuthor.getEmail()}"></span>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-4">
-                            <button class="btn btn-primary">Follow</button>
+                            <!--<button class="btn btn-primary">Follow</button>-->
                         </div>
                         <div class="log-lg-8">
                             <div class="hot-author-detail-user-stats">
@@ -124,12 +127,8 @@
                             <div class="row">
                                 <div class="col-lg-12 hot-posts-detail-user-stats">
                                     <div class="small-icons " style="display: inline">
-                                        <i class="fa fa-eye"></i><span
-                                            th:text="${hotPost.countViews}"></span> <i
-                                            class="fa fa-paperclip"></i><span
-                                            th:text="${hotPost.countViews}"></span><i
-                                            class="fa fa-comments"></i><span
-                                            th:text="${hotPost.countViews}"></span>
+                                        <i class="fa fa-eye"></i>
+                                        <span th:text="${hotPost.countViews}"></span>
                                     </div>
                                     <div class="vote-icons"
                                          style="display: inline; text-align: right">

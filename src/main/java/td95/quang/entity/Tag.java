@@ -1,4 +1,4 @@
-package td95.quang.domain;
+package td95.quang.entity;
 
 import java.util.Set;
 
@@ -6,6 +6,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
@@ -34,4 +36,12 @@ public class Tag {
 
 	@ManyToMany(mappedBy = "tags")
 	private Set<User> users;
+	
+	@ManyToMany
+	@JoinTable(
+			name="post_tag",
+			joinColumns= @JoinColumn(name="tag_id"),
+			inverseJoinColumns = @JoinColumn(name="post_id")
+			)
+	private Set<Post> posts;
 }

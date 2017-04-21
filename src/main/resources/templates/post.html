@@ -15,24 +15,25 @@
 <nav th:replace="master::header"></nav>
 <div th:replace="master::modal_contact"></div>
 <div class="container">
-	<div class="row">
-	<div th:if="${error}"
-					class="row alert alert-danger alert-dismissible">
-					<button type="button" class="close" data-dismiss="alert"
-						aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					<center>
-						<span><strong>Lỗi:</strong></span><span th:text="${error}"></span>
-					</center>
-				</div>
-	</div>
+    <div class="row">
+        <div th:if="${error}"
+             class="row alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert"
+                    aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <center>
+                <span><strong>Lỗi:</strong></span><span th:text="${error}"></span>
+            </center>
+        </div>
+    </div>
     <div class="row">
         <div class="col-lg-12">
             <div class="panel panel-default">
                 <div class="panel-heading">Viết bài mới</div>
                 <div class="panel-body">
-                    <form id="form-post" role="form" data-toggle="validator" class="form-horizontal" method="POST" action="/post"
+                    <form id="form-post" role="form" data-toggle="validator" class="form-horizontal" method="POST"
+                          action="/post"
                           th:action="@{/post}" th:object="${post}">
                         <div class="form-group">
                             <div class="col-lg-12">
@@ -44,17 +45,33 @@
                         </div>
                         <div class="form-group">
                             <div class="col-lg-12">
-                                <input th:field="*{imageCover}" id="form-post-image-cover" type="text" placeholder="Image Conver"
-                                       class="form-control" name="image-cover" value="" required="true" autofocus="true"/>
+                                <input th:field="*{imageCover}" id="form-post-image-cover" type="text"
+                                       placeholder="Image Conver"
+                                       class="form-control" name="image-cover" value="" required="true"
+                                       autofocus="true"/>
                                 <span class="help-block"> <strong></strong></span>
                             </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <center>
+                                <img id="imagePreview" width="40%" th:src="@{${post.imageCover}}"/>
+                            </center>
                         </div>
 
                         <div class="form-group">
                             <div class="col-lg-12">
-                                <input id="tag" type="text" placeholder="Tag"
-                                       class="form-control" name="tag" value="" required="true"/>
+                                <input id="form-post-tag" type="text" placeholder="Tag"
+                                       class="form-control" name="tag" value="" autocomplete="off" required="true"/>
 									<span class="help-block"> <strong></strong>
+									</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <div id="result-tag">
+
+                                </div>
+                                	<span class="help-block"> <strong></strong>
 									</span>
                             </div>
                         </div>

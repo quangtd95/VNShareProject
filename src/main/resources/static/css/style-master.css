@@ -90,5 +90,11 @@ body {
   margin-top: 10px;
   width: 100%;
 }
-
+.avatar-navication{
+  display: inline-block;
+  flex-basis: 25%;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
 /*# sourceMappingURL=style-app.css.map */

@@ -21,4 +21,11 @@
   background-color: white;
   height: 400px; }
 
+.vote i {
+  font-size: 50px; }
+
+.button-trans {
+  background-color: transparent;
+  border: none; }
+
 /*# sourceMappingURL=viewpost.css.map */

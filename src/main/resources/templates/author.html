@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<th:block th:replace="master::head"></th:block>
-<title>Tác giả</title>
+    <th:block th:replace="master::head">
+    </th:block>
+    <link rel="stylesheet" href="../static/css/tags.css"
+          th:href="@{/css/tags.css}" type="text/css"/>
+    <title>Author</title>
 </head>
 <body>
-	<div th:replace="master::header"></div>
-	<div th:replace="master::modal_contact"></div>
-	co cl tn v
-	<div th:replace="master::footer"></div>
+
+<div th:replace="master::header"></div>
+<div th:replace="master::modal_contact"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h4>
+                        <b>ALL AUTHORS </b><b th:text="${#lists.size(page.getContent())}"></b>
+                    </h4>
+                </div>
+                <div class="col-lg-8">
+                    <hr/>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="row">
+                <label for="select" class="col-md-4 control-label text-center">Sort
+                    by</label>
+                <div class="col-md-8">
+                    <select id="select" class="form-control">
+                        <option>Followers</option>
+                        <option>Posts</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div th:each="author,iterStat : ${page.getContent()}" class="col-lg-4 tag-view">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a th:href="@{/u/}+${author.id}"><img width="120px" height="90px" th:src="@{${author.avatar}}"/></a>
+                </div>
+                <div class="col-lg-8">
+                    <a th:href="@{/u/}+${author.id}"><h4 th:text="${author.name}"></h4></a>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div>
+									<span class="tag-counter"><strong
+                                            th:text="${author.countPosts}"></strong> posts</span> <br/> <span
+                                    class="tag-counter"><strong
+                                    th:text="${author.reputation}"></strong> Reputation</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <button type="button" class="btn btn-danger" disabled="true">Follow</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<center>
+    <div th:replace="pagination::pagination"></div>
+</center>
+
+<div th:replace="master::footer"></div>
 </body>
 </html>

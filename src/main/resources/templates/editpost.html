@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <th:block th:replace="master::head"></th:block>
-    <title>Create your post</title>
+    <title>Chỉnh sữa bài viết</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css"/>
     <!-- Include Editor style. -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.5.1/css/froala_editor.pkgd.min.css"
@@ -34,7 +34,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Viết bài mới</div>
+                    <div class="panel-heading">Chỉnh sữa</div>
                     <div class="panel-body">
                         <form id="form-post" role="form" data-toggle="validator" class="form-horizontal" method="POST"
                               action="/edit"
@@ -49,6 +49,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
+
                                 <div class="col-lg-12">
                                     <input th:field="*{imageCover}" id="form-post-image-cover" type="text"
                                            placeholder="Image Conver"
@@ -56,16 +57,13 @@
                                            required="true" autofocus="true"/>
                                     <span class="help-block"> <strong></strong></span>
                                 </div>
-                            </div>
-
-                            <div class="form-group">
                                 <div class="col-lg-12">
-                                    <input id="tag" type="text" placeholder="Tag"
-                                           class="form-control" name="tag" value="" required="true"/>
-									<span class="help-block"> <strong></strong>
-									</span>
+                                    <center>
+                                        <img id="imagePreview" width="40%" th:src="@{${post.imageCover}}"/>
+                                    </center>
                                 </div>
                             </div>
+
                             <div class="form-group">
                                 <div class="col-lg-12">
                                 <textarea id="form-post-content" th:value="${post.content}"
@@ -76,7 +74,8 @@
 
                             <div class="form-group">
                                 <div class="center">
-                                    <button id="btnSubmit" type="submit" class="btn btn-primary">Cập nhật bài viết</button>
+                                    <button id="btnSubmit" type="submit" class="btn btn-primary">Cập nhật bài viết
+                                    </button>
                                 </div>
                             </div>
                         </form>
@@ -87,13 +86,11 @@
     </div>
 </div>
 <footer th:replace="master::footer"></footer>
-<!-- Include external JS libs. -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
 <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
-
 <!-- Include Editor JS files. -->
 <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.5.1//js/froala_editor.pkgd.min.js"></script>

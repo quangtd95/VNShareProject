@@ -1,4 +1,4 @@
-package td95.quang.domain;
+package td95.quang.entity;
 
 import java.util.Date;
 import java.util.Set;
@@ -12,6 +12,7 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import lombok.Data;
 
@@ -56,6 +57,9 @@ public class Post {
 	
 	@Column(name="image_cover")
 	private String imageCover;
+	
+	@Transient
+	private String bufferTags;
 
 	public int getId() {
 		return id;
@@ -135,6 +139,14 @@ public class Post {
 
 	public void setImageCover(String imageCover) {
 		this.imageCover = imageCover;
+	}
+
+	public String getBufferTags() {
+		return bufferTags;
+	}
+
+	public void setBufferTags(String bufferTags) {
+		this.bufferTags = bufferTags;
 	}
 
 	

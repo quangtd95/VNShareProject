@@ -19,4 +19,23 @@
 .name-user {
   font-size: 20px; }
 
+.card-block {
+  background: white;
+  padding: 2em 1.3em;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  box-shadow: 0px 1px 5px -1px rgba(104, 123, 144, 0.31);
+  border-radius: 0.3em; }
+
+.post-title {
+  font-size: 20px; }
+
+.avatar img {
+  display: inline-block;
+  flex-basis: 25%;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 10px; }
+
 /*# sourceMappingURL=user.css.map */

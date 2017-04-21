@@ -5,10 +5,9 @@ import java.util.List;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-import td95.quang.domain.User;
+import td95.quang.entity.User;
 
 public interface UserService {
-	Iterable<User> findAll();
 	
 	Page<User> findAll(Pageable pageable);
 

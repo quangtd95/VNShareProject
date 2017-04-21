@@ -4,25 +4,24 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import td95.quang.domain.User;
+import td95.quang.entity.User;
 import td95.quang.repository.UserRepository;
-import td95.quang.repository.UserRepositoryCustom;
 
 @Service
 public class UserServiceImpl implements UserService {
-
+	private static final int PAGE_SIZE = 20;
 	@Autowired
 	private UserRepository userRepository;
 	
-	@Autowired
-	private UserRepositoryCustom userRepositoryCustom;
-
 	@Override
-	public Iterable<User> findAll() {
-		return userRepository.findAll();
+	public Page<User> findAll(Pageable pageable) {
+		PageRequest request = new PageRequest((pageable.getPageNumber() == 0) ? 0 : pageable.getPageNumber() - 1,
+				PAGE_SIZE);
+		return userRepository.findByOrderByReputationDesc(request);
 	}
 
 	@Override
@@ -42,12 +41,7 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public List<User> getHotAuthors() {
-		return userRepositoryCustom.getHotAuthors();
-	}
-
-	@Override
-	public Page<User> findAll(Pageable pageable) {
-		return userRepository.findAll(pageable);
+		return userRepository.findTop10ByOrderByReputationDesc();
 	}
 
 }

@@ -9,9 +9,10 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import td95.quang.domain.Post;
+import td95.quang.entity.Post;
+import td95.quang.entity.Vote;
 import td95.quang.repository.PostRepository;
-import td95.quang.repository.PostRepositoryCustom;
+import td95.quang.repository.VoteRepository;
 
 @Service
 public class PostServiceImpl implements PostService {
@@ -22,7 +23,8 @@ public class PostServiceImpl implements PostService {
 	private PostRepository postRepository;
 	
 	@Autowired
-	private PostRepositoryCustom postRepositoryCustom;
+	private VoteRepository voteRepository;
+	
 
 	@Override
 	public Page<Post> findAll(Pageable pageable) {
@@ -34,7 +36,8 @@ public class PostServiceImpl implements PostService {
 
 	@Override
 	public List<Post> getHotPosts() {
-		return postRepositoryCustom.getHotPosts();
+		//return postRepositoryCustom.getHotPosts();
+		return postRepository.findTop10ByOrderByCountViewsDesc();
 	}
 
 	@Override
@@ -46,6 +49,21 @@ public class PostServiceImpl implements PostService {
 	public void save(Post post) {
 		postRepository.save(post);
 		
+	}
+
+	@Override
+	public Vote findVote(int userId, int postId) {
+		return voteRepository.findTopByUserIdAndPostId(userId, postId);
+	}
+
+	@Override
+	public void save(Vote vote) {
+		voteRepository.save(vote);
+	}
+
+	@Override
+	public void delete(int id) {
+		postRepository.delete(id);
 	}
 
 

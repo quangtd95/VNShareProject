@@ -1,4 +1,4 @@
-package td95.quang.domain;
+package td95.quang.entity;
 
 import java.io.Serializable;
 import java.util.Set;

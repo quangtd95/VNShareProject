@@ -2,9 +2,10 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <th:block th:replace="master::head"></th:block>
+    <title th:text="${user.name}"></title>
     <link th:href="@{/css/user.css}" rel="stylesheet" type="text/css"/>
 </head>
-<body style="background-color: white">
+<body>
 <nav th:replace="master::header"></nav>
 <div th:replace="master::modal_contact"></div>
 <div class="container">
@@ -22,14 +23,38 @@
                 <div class="tab-content">
                     <div class="tab-pane active" id="panel-posts">
                         <th:block th:each="post,inerStats : ${user.posts}">
-                           <div class="row">
-                                <div class="col-lg-1">
-                                    <img th:src="${post.imageCover}"/>
+                            <div class="row  card-block">
+                                <div class="col-lg-4 avatar">
+                                    <img th:src="@{${post.imageCover}}"/>
                                 </div>
-                               <div class="col-lg-11" style="background-color: grey;height: 4px;">
-
-                               </div>
-                           </div>
+                                <div class="col-lg-8">
+                                    <div class="row">
+                                        <div class="col-lg-4"><b th:text="${post.user.name}"></b></div>
+                                        <div class="col-lg-8"><i th:text="${post.createdAt}"></i></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <a th:href="@{/post/}+${post.id}"><strong class="post-title"
+                                                                                      th:text="${post.title}"></strong></a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <th:block th:each="tag : ${post.tags}">
+                                                <button class="btn btn-info" th:text="${tag.name}"></button>
+                                            </th:block>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <i class="material-icons">visibility</i>
+                                            <strong th:text="${post.countViews}"></strong>
+                                            <i class="material-icons">star</i>
+                                            <strong th:text="${post.points}"></strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </th:block>
                     </div>
                     <div class="tab-pane" id="panel-drafts">
@@ -85,11 +110,15 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-2 col-lg-offset-4">
-                    <a><button class="btn btn-danger" style="width: 100px;">Edit</button></a>
+            <th:block sec:authorize="isAuthenticated()">
+                <div class="row">
+                    <div class="col-lg-2 col-lg-offset-4">
+                        <a th:href="@{/setting}">
+                            <button class="btn btn-danger" style="width: 100px;">Edit</button>
+                        </a>
+                    </div>
                 </div>
-            </div>
+            </th:block>
         </div>
     </div>
 </div>

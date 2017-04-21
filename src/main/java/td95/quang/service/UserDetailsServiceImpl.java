@@ -12,8 +12,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import td95.quang.domain.Role;
-import td95.quang.domain.User;
+import td95.quang.entity.Role;
+import td95.quang.entity.User;
 import td95.quang.repository.UserRepository;
 
 @Service

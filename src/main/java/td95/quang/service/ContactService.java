@@ -5,7 +5,7 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
-import td95.quang.domain.Contact;
+import td95.quang.entity.Contact;
 
 @Service
 public class ContactService {

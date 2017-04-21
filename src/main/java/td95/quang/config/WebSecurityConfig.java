@@ -36,6 +36,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		.antMatchers("/").permitAll()
 		.antMatchers("/admin").hasRole("ADMIN")
 		.antMatchers("/post").authenticated()
+		.antMatchers("/setting").authenticated()
+		.antMatchers("/setting/*").authenticated()
 		.and()
 		.formLogin()
 		.loginPage("/login")
