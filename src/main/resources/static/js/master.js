@@ -3,7 +3,13 @@ $(document).ready(function() {
 		event.preventDefault();
 		call_ajax_to_send_contact();
 	});
+	$('#formSearch').submit(function(event){
+		event.preventDefault();
+		var query = $('#txtSearch').val();
+		window.location.replace("search?query="+encodeURIComponent(query));
+	});
 });
+
 
 function call_ajax_to_send_contact() {
 
@@ -38,3 +44,6 @@ function call_ajax_to_send_contact() {
 	});
 
 }
+
+
+

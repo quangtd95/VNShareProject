@@ -1,10 +1,12 @@
 package td95.quang.entity;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
@@ -39,6 +41,7 @@ public class User {
 
 	@Column(name = "avatar")
 	private String avatar;
+	
 
 	@Column(name = "reputation")
 	private int reputation;
@@ -78,8 +81,8 @@ public class User {
 	@JoinTable(name = "user_tag", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "tag_id"))
 	private Set<Tag> tags;
 	
-	@OneToMany(mappedBy = "user")
-	private Set<Post> posts;
+	@OneToMany(mappedBy = "user",fetch=FetchType.EAGER)
+	private List<Post> posts;
 	
 	@Transient
 	private MultipartFile file;

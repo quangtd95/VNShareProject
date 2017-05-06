@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="master::head">
+    </th:block>
+    <link rel="stylesheet" href="../static/css/tags.css"
+          th:href="@{/css/tags.css}" type="text/css"/>
+    <link rel="stylesheet" href="../static/css/user.css"
+          th:href="@{/css/user.css}" type="text/css"/>
+    <link rel="stylesheet" href="../static/css/home.css"
+          th:href="@{/css/home.css}" type="text/css"/>
+    <title>Search</title>
+</head>
+<body>
+
+<div th:replace="master::header"></div>
+<div th:replace="master::modal_contact"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h4>
+                        <b>Kết quả </b><b th:text="${#lists.size(result)}"></b>
+                    </h4>
+                </div>
+                <div class="col-lg-8">
+                    <hr/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <th:block th:if ="${type} == 'USER'">
+            <div class="row">
+
+                <div th:each="author,iterStat : ${result}" class="col-lg-4 tag-view">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <a th:href="@{/u/}+${author.id}"><img width="120px" height="90px" th:src="@{${author.avatar}}"/></a>
+                        </div>
+                        <div class="col-lg-8">
+                            <a th:href="@{/u/}+${author.id}"><h4 th:text="${author.name}"></h4></a>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div>
+									<span class="tag-counter"><strong
+                                            th:text="${author.countPosts}"></strong> posts</span> <br/> <span
+                                            class="tag-counter"><strong
+                                            th:text="${author.reputation}"></strong> Reputation</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <button type="button" class="btn btn-danger" disabled="true">Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </th:block>
+        <th:block th:if ="${type} == 'POST'">
+            <th:block th:each="post,inerStats : ${result}">
+                <div class="row  card-block">
+                    <div class="col-lg-4 avatar">
+                        <img th:src="@{${post.imageCover}}"/>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-4"><b th:text="${post.user.name}"></b></div>
+                            <div class="col-lg-8"><i th:text="${post.createdAt}"></i></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <a th:href="@{/post/}+${post.id}"><strong class="post-title"
+                                                                          th:text="${post.title}"></strong></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <th:block th:each="tag : ${post.tags}">
+                                    <button class="btn btn-info" th:text="${tag.name}"></button>
+                                </th:block>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <i class="material-icons">visibility</i>
+                                <strong th:text="${post.countViews}"></strong>
+                                <i class="material-icons">star</i>
+                                <strong th:text="${post.points}"></strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </th:block>
+        </th:block>
+
+        <th:block th:if ="${type} == 'TAG'">
+            <div class="row">
+
+                <div th:each="tag,iterStat : ${result}" class="col-lg-4 tag-view">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <a th:href="@{/tag/}+${tag.id}"><img width="100px" height = "100px" th:src="@{${tag.getImage()}}"/></a>
+                        </div>
+                        <div class="col-lg-8">
+                            <a th:href="@{/tag/}+${tag.id}"><h4 th:text="${tag.getName()}"></h4></a>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div>
+									<span class="tag-counter"><strong
+                                            th:text="${tag.getCountPost()}"></strong> posts</span> <br/> <span
+                                            class="tag-counter"><strong
+                                            th:text="${tag.getCountFollow()}"></strong> followers</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <th:block sec:authorize="hasRole('ROLE_ANONYMOUS')">
+                                        <button type="button" class="btn btn-danger" disabled="true">Follow</button>
+                                    </th:block>
+                                    <th:block sec:authorize="isAuthenticated()">
+                                        <th:block>
+                                            <button type="button" class="btn btn-danger" id="btnFollow">Follow</button>
+                                        </th:block>
+                                    </th:block>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </th:block>
+<th:block th:if="${type}=='DEFAULT'">
+    <h1>
+        Không có kết quả tìm kiếm :)
+    </h1>
+</th:block>
+
+        <!--<div th:each="tag,iterStat : ${result}" class="col-lg-4 tag-view">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a th:href="@{/tag/}+${tag.id}"><img width="100px" height = "100px" th:src="@{${tag.getImage()}}"/></a>
+                </div>
+                <div class="col-lg-8">
+                    <a th:href="@{/tag/}+${tag.id}"><h4 th:text="${tag.getName()}"></h4></a>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div>
+									<span class="tag-counter"><strong
+                                            th:text="${tag.getCountPost()}"></strong> posts</span> <br/> <span
+                                    class="tag-counter"><strong
+                                    th:text="${tag.getCountFollow()}"></strong> followers</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <th:block sec:authorize="hasRole('ROLE_ANONYMOUS')">
+                                <button type="button" class="btn btn-danger" disabled="true">Follow</button>
+                            </th:block>
+                            <th:block sec:authorize="isAuthenticated()">
+                                <th:block>
+                                    <button type="button" class="btn btn-danger" id="btnFollow">Follow</button>
+                                </th:block>
+                            </th:block>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+    </div>
+
+</div>
+
+
+<div th:replace="master::footer"></div>
+</body>
+</html>

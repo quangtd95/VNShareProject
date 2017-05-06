@@ -47,7 +47,7 @@
         <div th:each="tag,iterStat : ${page.getContent()}" class="col-lg-4 tag-view">
             <div class="row">
                 <div class="col-lg-4">
-                    <a th:href="@{/tag/}+${tag.id}"><img th:src="@{${tag.getImage()}}"/></a>
+                    <a th:href="@{/tag/}+${tag.id}"><img width="100px" height = "100px" th:src="@{${tag.getImage()}}"/></a>
                 </div>
                 <div class="col-lg-8">
                     <a th:href="@{/tag/}+${tag.id}"><h4 th:text="${tag.getName()}"></h4></a>

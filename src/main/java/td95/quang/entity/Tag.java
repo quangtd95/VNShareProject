@@ -11,6 +11,8 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.Data;
 
 @Data
@@ -34,9 +36,11 @@ public class Tag {
 	@Column(name = "image")
 	private String image;
 
+	@JsonIgnore
 	@ManyToMany(mappedBy = "tags")
 	private Set<User> users;
 	
+	@JsonIgnore
 	@ManyToMany
 	@JoinTable(
 			name="post_tag",

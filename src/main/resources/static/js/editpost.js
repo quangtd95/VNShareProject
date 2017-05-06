@@ -20,6 +20,7 @@ $(document).ready(function () {
 });
 
 function  call_ajax_to_update_post() {
+	
     var post = {
         id : $('#form-post-id').val(),
         title : $('#form-post-title').val(),

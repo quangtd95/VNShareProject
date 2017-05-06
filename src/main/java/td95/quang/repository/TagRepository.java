@@ -11,7 +11,7 @@ import td95.quang.entity.Tag;
 public interface TagRepository extends JpaRepository<Tag, Integer>{
 	Page<Tag> findAll(Pageable pageable);
 	List<Tag> findByNameContaining(String query);
-	Tag findByName(String name);
+	Tag findByNameInIgnoreCase(String name);
 	Tag findById(int id);
 	
 }

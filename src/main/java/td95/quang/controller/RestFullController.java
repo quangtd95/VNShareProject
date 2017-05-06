@@ -22,7 +22,6 @@ public class RestFullController {
 		if (stringJSON.isEmpty())
 			httpStatus = HttpStatus.NOT_FOUND;
 		return new ResponseEntity<String>(stringJSON, httpStatus);
-
 	}
 
 }

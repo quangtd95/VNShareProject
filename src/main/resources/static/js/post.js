@@ -7,6 +7,8 @@ $(document).ready(function () {
         call_ajax_to_post();
     });
     $("#form-post-image-cover").keyup(function() {
+    	if ($('#form-post-image-cover').val().length == 0) 
+    		$('#form-post-image-cover').val("https://www.registerforshare.org/images/shareLogo.png");
         $("#imagePreview").attr("src",$('#form-post-image-cover').val());
     });
     $('#form-post-tag').keyup(function () {

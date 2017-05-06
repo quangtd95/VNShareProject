@@ -46,12 +46,12 @@
     </div>
 </div>
 
-<div class="main-content">
+ <div class="main-content">
     <div class="container">
         <div class="row">
             <div class="col-lg-9 post-layout">
                 <th:block th:each="post , inerStats : ${page.getContent()}">
-                    <div class="col-lg-4">
+                    <div class="col-lg-3">
                         <div class="dapibus">
                             <a th:href="@{/post/}+${post.id}">
                                 <h2><p th:text="${post.title}"></p></h2>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-4">
-                            <!--<button class="btn btn-primary">Follow</button>-->
+                            <button class="btn btn-primary">Follow</button>
                         </div>
                         <div class="log-lg-8">
                             <div class="hot-author-detail-user-stats">
@@ -145,7 +145,8 @@
             </div>
         </div>
     </div>
-</div>
+</div> 
+>
 
 
 <!-- content -->

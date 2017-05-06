@@ -88,20 +88,28 @@ public class PostController {
 		Set<Tag> tags = new HashSet<Tag>();
 		String[] s = post.getBufferTags().split(" ");
 		for (int i = 0; i < s.length; i++) {
-			Tag tag = tagService.findByName(s[i]);
+			Tag tag = tagService.findByNameInIgnoreCase(s[i]);
 			if (tag != null) {
 				tag.setCountPost(tag.getCountPost() + 1);
 				tagService.save(tag);
 				tags.add(tag);
-				
+			} else {
+				tag = new Tag();
+				tag.setName(s[i]);
+				tag.setImage("http://www.makeawish.org.ph/wp-content/plugins/ultimate-social-media-icons//images/icons_theme/default/default_share.png");
+				tag.setCountFollow(0);
+				tag.setCountPost(1);
+				tagService.save(tag);
+				tags.add(tag);
 			}
 		}
+		
 		User userCurrent = userService.findOne(principal.getName());
+		if (post.getImageCover() == null || post.getImageCover().equals("")) post.setImageCover("https://www.registerforshare.org/images/shareLogo.png");
 		post.setTags(tags);
 		post.setUser(userCurrent);
 		post.setCreatedAt(Calendar.getInstance().getTime());
 		post.setUpdatedAt(Calendar.getInstance().getTime());
-		System.out.println(post.getImageCover());
 		userCurrent.setCountPosts(userCurrent.getCountPosts() + 1);
 		postService.save(post);
 		return String.valueOf(post.getId());

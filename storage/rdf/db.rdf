@@ -1,0 +1,1402 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:vnshare="http://vnshare.com/user/#" > 
+  <rdf:Description rdf:about="http://vnshare.com/user/208">
+    <vnshare:hasPost rdf:resource="http://vnshare.com/user/#post169"/>
+    <vnshare:hasPost rdf:resource="http://vnshare.com/user/#post168"/>
+    <vnshare:hasPost rdf:resource="http://vnshare.com/user/#post167"/>
+    <vnshare:hasPost rdf:resource="http://vnshare.com/user/#post166"/>
+    <vnshare:hasPost rdf:resource="http://vnshare.com/user/#post161"/>
+    <vnshare:email>123@123.123</vnshare:email>
+    <vnshare:name>quang</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/179">
+    <vnshare:email>amaya67@schinner.info</vnshare:email>
+    <vnshare:name>Brooklyn Konopelski</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/167">
+    <vnshare:email>lia.jast@hotmail.com</vnshare:email>
+    <vnshare:name>Estefania Raynor</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/131">
+    <vnshare:email>myah11@yahoo.com</vnshare:email>
+    <vnshare:name>Monique Herman</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/155">
+    <vnshare:email>ralph72@johnson.com</vnshare:email>
+    <vnshare:name>Harold Casper</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/143">
+    <vnshare:email>lennie.kassulke@hotmail.com</vnshare:email>
+    <vnshare:name>Rowena Olson</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/63">
+    <vnshare:email>gdamore@reynolds.net</vnshare:email>
+    <vnshare:name>Maximillian Wilkinson</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/51">
+    <vnshare:email>araceli33@gmail.com</vnshare:email>
+    <vnshare:name>Prof. Dennis Schiller</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/87">
+    <vnshare:email>rohan.emie@ward.com</vnshare:email>
+    <vnshare:name>Verner Hodkiewicz V</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/75">
+    <vnshare:email>qhickle@hotmail.com</vnshare:email>
+    <vnshare:name>Isaac Boehm V</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/99">
+    <vnshare:email>jaren.abbott@stracke.biz</vnshare:email>
+    <vnshare:name>Nella Reynolds Jr.</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/4">
+    <vnshare:email>rath.chaya@upton.net</vnshare:email>
+    <vnshare:name>Hugh Predovic</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#post146">
+    <vnshare:postTitle>Thử Nghiệm Với Angular – Pipe Trong Angular</vnshare:postTitle>
+    <vnshare:points rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:points>
+    <vnshare:countViews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</vnshare:countViews>
+    <vnshare:postId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">146</vnshare:postId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/207">
+    <vnshare:email>2@2.com</vnshare:email>
+    <vnshare:name>azzx</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/178">
+    <vnshare:email>torp.petra@yahoo.com</vnshare:email>
+    <vnshare:name>Mallie Crist</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/142">
+    <vnshare:email>phyllis67@gmail.com</vnshare:email>
+    <vnshare:name>Maximillia Price</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/130">
+    <vnshare:email>kaitlin.waters@gmail.com</vnshare:email>
+    <vnshare:name>Matilda Spinka</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/19">
+    <vnshare:email>kay19@yahoo.com</vnshare:email>
+    <vnshare:name>Corine Mraz</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/166">
+    <vnshare:email>kreiger.brock@olson.com</vnshare:email>
+    <vnshare:name>Lula Nader</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/154">
+    <vnshare:email>scarlett44@bergnaum.com</vnshare:email>
+    <vnshare:name>Carlo McDermott</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/74">
+    <vnshare:email>shanahan.ibrahim@hotmail.com</vnshare:email>
+    <vnshare:name>Miss Freida Lang</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/62">
+    <vnshare:email>reva.krajcik@hotmail.com</vnshare:email>
+    <vnshare:name>Ms. Reta Weber</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/98">
+    <vnshare:email>kunze.bria@yahoo.com</vnshare:email>
+    <vnshare:name>Bradford Cruickshank</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/86">
+    <vnshare:email>carrie79@rice.net</vnshare:email>
+    <vnshare:name>Dante Bogan</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#post145">
+    <vnshare:postTitle>QA đã hết thời?</vnshare:postTitle>
+    <vnshare:points rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:points>
+    <vnshare:countViews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11</vnshare:countViews>
+    <vnshare:postId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">145</vnshare:postId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/3">
+    <vnshare:email>towne.camron@reilly.com</vnshare:email>
+    <vnshare:name>Cleve Friesen</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#post169">
+    <vnshare:hasTag rdf:resource="http://vnshare.com/user/#tag6"/>
+    <vnshare:hasTag rdf:resource="http://vnshare.com/user/#tag24"/>
+    <vnshare:hasTag rdf:resource="http://vnshare.com/user/#tag1"/>
+    <vnshare:postTitle>Sử dụng Parcelable &amp; Serializable trong Android</vnshare:postTitle>
+    <vnshare:points rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</vnshare:points>
+    <vnshare:countViews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</vnshare:countViews>
+    <vnshare:postId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">169</vnshare:postId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/50">
+    <vnshare:email>ullrich.abelardo@gmail.com</vnshare:email>
+    <vnshare:name>Natalie Kshlerin</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#post157">
+    <vnshare:hasTag rdf:resource="http://vnshare.com/user/#tag13"/>
+    <vnshare:postTitle>Tìm hiểu về jsonrpclib</vnshare:postTitle>
+    <vnshare:points rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</vnshare:points>
+    <vnshare:countViews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</vnshare:countViews>
+    <vnshare:postId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">157</vnshare:postId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/109">
+    <vnshare:email>hartmann.maci@braun.net</vnshare:email>
+    <vnshare:name>Roselyn Kunde</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/206">
+    <vnshare:email>11@1.com</vnshare:email>
+    <vnshare:name>1111111</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/189">
+    <vnshare:email>lera66@botsford.com</vnshare:email>
+    <vnshare:name>Prof. Mikel Rodriguez</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/18">
+    <vnshare:email>axel53@purdy.net</vnshare:email>
+    <vnshare:name>Lowell Block I</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/153">
+    <vnshare:email>katheryn.predovic@smith.com</vnshare:email>
+    <vnshare:name>Ms. Odessa Hegmann</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/141">
+    <vnshare:email>vquigley@cummerata.biz</vnshare:email>
+    <vnshare:name>Mr. Johan Reinger</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/177">
+    <vnshare:email>nkohler@yahoo.com</vnshare:email>
+    <vnshare:name>Clifford Lesch III</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/165">
+    <vnshare:email>jheathcote@douglas.com</vnshare:email>
+    <vnshare:name>Beryl Heaney</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/85">
+    <vnshare:email>claude.frami@hirthe.biz</vnshare:email>
+    <vnshare:name>Ms. Janis Simonis</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/73">
+    <vnshare:email>rosie78@hotmail.com</vnshare:email>
+    <vnshare:name>Zelma Greenholt</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/97">
+    <vnshare:email>vjakubowski@gmail.com</vnshare:email>
+    <vnshare:name>Solon Heller</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/2">
+    <vnshare:email>sida@sida.sida</vnshare:email>
+    <vnshare:name>sida</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/61">
+    <vnshare:email>runolfsson.elliott@gmail.com</vnshare:email>
+    <vnshare:name>Petra Hahn</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#post168">
+    <vnshare:hasTag rdf:resource="http://vnshare.com/user/#tag25"/>
+    <vnshare:hasTag rdf:resource="http://vnshare.com/user/#tag24"/>
+    <vnshare:hasTag rdf:resource="http://vnshare.com/user/#tag1"/>
+    <vnshare:postTitle>[React Native] Guide - Phần 1 - Handling Touches</vnshare:postTitle>
+    <vnshare:points rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</vnshare:points>
+    <vnshare:countViews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</vnshare:countViews>
+    <vnshare:postId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">168</vnshare:postId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/205">
+    <vnshare:email>1@1.com</vnshare:email>
+    <vnshare:name>1111111</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/108">
+    <vnshare:email>westley45@hotmail.com</vnshare:email>
+    <vnshare:name>Anahi Miller</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/29">
+    <vnshare:email>vena70@konopelski.info</vnshare:email>
+    <vnshare:name>Prof. Flossie Lowe Sr.</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/17">
+    <vnshare:email>jcartwright@yahoo.com</vnshare:email>
+    <vnshare:name>Jazmyn Heaney</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/164">
+    <vnshare:email>samantha25@yahoo.com</vnshare:email>
+    <vnshare:name>Mr. Pablo Gleichner Sr.</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/152">
+    <vnshare:email>hhirthe@hotmail.com</vnshare:email>
+    <vnshare:name>Marlen Kemmer</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/188">
+    <vnshare:email>robyn47@grant.biz</vnshare:email>
+    <vnshare:name>Rebekah Parker</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/176">
+    <vnshare:email>alphonso.marks@hotmail.com</vnshare:email>
+    <vnshare:name>Dr. Rylan Reinger</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/96">
+    <vnshare:email>parker59@gmail.com</vnshare:email>
+    <vnshare:name>Carlee Kreiger</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/84">
+    <vnshare:email>jacobi.antonina@zboncak.com</vnshare:email>
+    <vnshare:name>Mya Franecki</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/140">
+    <vnshare:email>van.champlin@schmidt.net</vnshare:email>
+    <vnshare:name>Tremayne Stark V</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#post167">
+    <vnshare:hasTag rdf:resource="http://vnshare.com/user/#tag15"/>
+    <vnshare:postTitle>demo3</vnshare:postTitle>
+    <vnshare:points rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:points>
+    <vnshare:countViews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</vnshare:countViews>
+    <vnshare:postId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">167</vnshare:postId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#post143">
+    <vnshare:postTitle>Ajax cơ bản trong ứng dụng Rails</vnshare:postTitle>
+    <vnshare:points rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:points>
+    <vnshare:countViews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">259</vnshare:countViews>
+    <vnshare:postId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">143</vnshare:postId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/1">
+    <vnshare:email>quang.td95@gmail.com</vnshare:email>
+    <vnshare:name>quang95</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/72">
+    <vnshare:email>dell.tillman@wuckert.com</vnshare:email>
+    <vnshare:name>Moises Schroeder</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/60">
+    <vnshare:email>jziemann@yahoo.com</vnshare:email>
+    <vnshare:name>Ms. Linnie Bergstrom</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/107">
+    <vnshare:email>ckreiger@yahoo.com</vnshare:email>
+    <vnshare:name>Lucile West</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/119">
+    <vnshare:email>kristina79@yahoo.com</vnshare:email>
+    <vnshare:name>Neha Larkin</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/204">
+    <vnshare:email>ahihi@gmail.com</vnshare:email>
+    <vnshare:name>ahihi</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/16">
+    <vnshare:email>hrogahn@gmail.com</vnshare:email>
+    <vnshare:name>Dr. Werner Boyle</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/28">
+    <vnshare:email>kennedi47@streich.biz</vnshare:email>
+    <vnshare:name>Mr. Carleton Schuster</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/175">
+    <vnshare:email>eborer@eichmann.info</vnshare:email>
+    <vnshare:name>Mr. Friedrich Osinski III</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/163">
+    <vnshare:email>hudson.velda@walker.biz</vnshare:email>
+    <vnshare:name>Van Cormier</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/187">
+    <vnshare:email>dstoltenberg@hotmail.com</vnshare:email>
+    <vnshare:name>Rylee Kuphal</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/95">
+    <vnshare:email>aliza57@dach.info</vnshare:email>
+    <vnshare:name>Dr. Jayson Lowe</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/151">
+    <vnshare:email>hirthe.tressie@berge.org</vnshare:email>
+    <vnshare:name>Roger Monahan MD</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/83">
+    <vnshare:email>twalker@yahoo.com</vnshare:email>
+    <vnshare:name>Prof. Ofelia Dickens I</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/71">
+    <vnshare:email>dibbert.grady@hotmail.com</vnshare:email>
+    <vnshare:name>Heather Bernhard</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/118">
+    <vnshare:email>karlee75@yahoo.com</vnshare:email>
+    <vnshare:name>Kaitlyn Fadel</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/106">
+    <vnshare:email>ddare@yahoo.com</vnshare:email>
+    <vnshare:name>Prof. Merlin Boyer III</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/27">
+    <vnshare:email>phoebe.kuphal@hotmail.com</vnshare:email>
+    <vnshare:name>Wilfredo Abshire I</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/15">
+    <vnshare:email>mack.johns@corwin.net</vnshare:email>
+    <vnshare:name>Stella Moore</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/203">
+    <vnshare:hasPost rdf:resource="http://vnshare.com/user/#post165"/>
+    <vnshare:hasPost rdf:resource="http://vnshare.com/user/#post146"/>
+    <vnshare:hasPost rdf:resource="http://vnshare.com/user/#post157"/>
+    <vnshare:hasPost rdf:resource="http://vnshare.com/user/#post143"/>
+    <vnshare:email>djwag.special.vn@gmail.com</vnshare:email>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</vnshare:reputation>
+    <vnshare:hasPost rdf:resource="http://vnshare.com/user/#post145"/>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</vnshare:countPosts>
+    <vnshare:hasPost rdf:resource="http://vnshare.com/user/#post149"/>
+    <vnshare:name>quangquang</vnshare:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#tag19">
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</vnshare:countPosts>
+    <vnshare:tagId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19</vnshare:tagId>
+    <vnshare:tagTitle>Share</vnshare:tagTitle>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/39">
+    <vnshare:email>fblick@gmail.com</vnshare:email>
+    <vnshare:name>Jaleel Hane</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/186">
+    <vnshare:email>gisselle12@hotmail.com</vnshare:email>
+    <vnshare:name>Edmund Larkin</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/174">
+    <vnshare:email>donna20@hotmail.com</vnshare:email>
+    <vnshare:name>Coy Graham IV</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/198">
+    <vnshare:email>mann.edyth@nicolas.net</vnshare:email>
+    <vnshare:name>Yvette Eichmann</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/162">
+    <vnshare:email>vbrown@glover.com</vnshare:email>
+    <vnshare:name>Nelson Lind</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/150">
+    <vnshare:email>walsh.liana@hotmail.com</vnshare:email>
+    <vnshare:name>Robyn Kuhlman</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/14">
+    <vnshare:email>ghahn@hotmail.com</vnshare:email>
+    <vnshare:name>Prof. Isac Ullrich Sr.</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/70">
+    <vnshare:email>shany01@hotmail.com</vnshare:email>
+    <vnshare:name>Dr. Annetta Zieme II</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#post149">
+    <vnshare:postTitle>TRIGGER trong SQL</vnshare:postTitle>
+    <vnshare:points rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</vnshare:points>
+    <vnshare:countViews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</vnshare:countViews>
+    <vnshare:postId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">149</vnshare:postId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/94">
+    <vnshare:email>yrolfson@yahoo.com</vnshare:email>
+    <vnshare:name>Aurelie Moore III</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/82">
+    <vnshare:email>agnes36@yahoo.com</vnshare:email>
+    <vnshare:name>Phyllis Reinger MD</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/105">
+    <vnshare:email>evangeline06@macejkovic.com</vnshare:email>
+    <vnshare:name>Turner Dickens</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/129">
+    <vnshare:email>aterry@gmail.com</vnshare:email>
+    <vnshare:name>Percy Pfeffer</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/117">
+    <vnshare:email>astrid06@gmail.com</vnshare:email>
+    <vnshare:name>Natalia Effertz</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/38">
+    <vnshare:email>kboyer@gmail.com</vnshare:email>
+    <vnshare:name>Mr. Orville Schumm I</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/26">
+    <vnshare:email>neha67@kling.info</vnshare:email>
+    <vnshare:name>Dorris Donnelly</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/197">
+    <vnshare:email>alfreda02@hotmail.com</vnshare:email>
+    <vnshare:name>Prof. Jordane Gusikowski III</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/185">
+    <vnshare:email>ritchie.iva@hotmail.com</vnshare:email>
+    <vnshare:name>Pedro Kilback</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/173">
+    <vnshare:email>kayla.emard@corkery.org</vnshare:email>
+    <vnshare:name>Mr. Leone Smitham PhD</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/161">
+    <vnshare:email>beth.stanton@hotmail.com</vnshare:email>
+    <vnshare:name>Rowland Marks</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/25">
+    <vnshare:email>tess18@king.com</vnshare:email>
+    <vnshare:name>Westley Lindgren</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/13">
+    <vnshare:email>zaria.langosh@lowe.com</vnshare:email>
+    <vnshare:name>Hailee Muller</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#tag1">
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</vnshare:countPosts>
+    <vnshare:tagId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</vnshare:tagId>
+    <vnshare:tagTitle>Android</vnshare:tagTitle>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/81">
+    <vnshare:email>hamill.ellie@gmail.com</vnshare:email>
+    <vnshare:name>Magdalen Hirthe</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/93">
+    <vnshare:email>vesta.cronin@zemlak.biz</vnshare:email>
+    <vnshare:name>Prof. Mortimer Ortiz III</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/128">
+    <vnshare:email>rmante@oconnell.com</vnshare:email>
+    <vnshare:name>Estel Blick</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/116">
+    <vnshare:email>metz.evans@hotmail.com</vnshare:email>
+    <vnshare:name>Dylan Douglas</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/49">
+    <vnshare:email>amina.walsh@terry.biz</vnshare:email>
+    <vnshare:name>Prof. Jayne Lemke</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/104">
+    <vnshare:email>shea98@pacocha.com</vnshare:email>
+    <vnshare:name>Garnett Gutkowski</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/37">
+    <vnshare:email>lcummerata@hand.biz</vnshare:email>
+    <vnshare:name>Ms. Breanna Spinka</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/196">
+    <vnshare:email>cspencer@marquardt.com</vnshare:email>
+    <vnshare:name>Addison Carter</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/160">
+    <vnshare:email>tnolan@gmail.com</vnshare:email>
+    <vnshare:name>Miss Alba Schamberger IV</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/184">
+    <vnshare:email>ewell32@schowalter.com</vnshare:email>
+    <vnshare:name>Mossie Kuvalis I</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/172">
+    <vnshare:email>leffler.kendra@parker.com</vnshare:email>
+    <vnshare:name>Coy Corkery</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/12">
+    <vnshare:email>price.mattie@sanford.net</vnshare:email>
+    <vnshare:name>Lauren Powlowski</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/36">
+    <vnshare:email>luna36@yahoo.com</vnshare:email>
+    <vnshare:name>Angelica Kohler</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/24">
+    <vnshare:email>fritsch.cecil@baumbach.com</vnshare:email>
+    <vnshare:name>Liam Daugherty</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/92">
+    <vnshare:email>wyman.graham@gmail.com</vnshare:email>
+    <vnshare:name>Britney Cassin</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/80">
+    <vnshare:email>mckenzie.micaela@senger.net</vnshare:email>
+    <vnshare:name>Joana Walter</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/139">
+    <vnshare:email>carmine.ankunding@mohr.com</vnshare:email>
+    <vnshare:name>Madisen Hessel</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/127">
+    <vnshare:email>reyna31@hotmail.com</vnshare:email>
+    <vnshare:name>Ernesto Boyer</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/103">
+    <vnshare:email>orn.kaitlin@kuhlman.com</vnshare:email>
+    <vnshare:name>Dr. Monroe Turcotte</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/48">
+    <vnshare:email>fjohnston@klocko.com</vnshare:email>
+    <vnshare:name>Jackson Bernhard</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/115">
+    <vnshare:email>elvera09@gmail.com</vnshare:email>
+    <vnshare:name>Kianna Auer</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/171">
+    <vnshare:email>qkreiger@kilback.com</vnshare:email>
+    <vnshare:name>Laverne Casper II</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/195">
+    <vnshare:email>okozey@harvey.com</vnshare:email>
+    <vnshare:name>Mazie Stracke</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/183">
+    <vnshare:email>leanna08@yahoo.com</vnshare:email>
+    <vnshare:name>Santos Reilly</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/23">
+    <vnshare:email>hodkiewicz.natasha@hotmail.com</vnshare:email>
+    <vnshare:name>Bobbie Jaskolski PhD</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/11">
+    <vnshare:email>west.zora@leffler.org</vnshare:email>
+    <vnshare:name>Humberto Crist PhD</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#post150">
+    <vnshare:postTitle>Android Studio 2.3 chính thức được phát hành</vnshare:postTitle>
+    <vnshare:points rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:points>
+    <vnshare:countViews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14</vnshare:countViews>
+    <vnshare:postId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150</vnshare:postId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/47">
+    <vnshare:email>julien.monahan@maggio.com</vnshare:email>
+    <vnshare:name>Tanya Rosenbaum</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/35">
+    <vnshare:email>harvey.emanuel@yahoo.com</vnshare:email>
+    <vnshare:name>Prof. Nellie Nienow</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/91">
+    <vnshare:email>melany58@veum.biz</vnshare:email>
+    <vnshare:name>Ms. Jacquelyn Harvey</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/138">
+    <vnshare:email>witting.beau@yahoo.com</vnshare:email>
+    <vnshare:name>Antonetta Runolfsdottir</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#tag15">
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</vnshare:countPosts>
+    <vnshare:tagId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</vnshare:tagId>
+    <vnshare:tagTitle>Database</vnshare:tagTitle>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/114">
+    <vnshare:email>forrest.murphy@ebert.com</vnshare:email>
+    <vnshare:name>Quinton Dibbert</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/59">
+    <vnshare:email>alexandrine78@hirthe.com</vnshare:email>
+    <vnshare:name>Dr. Billie Corwin PhD</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/126">
+    <vnshare:email>cjacobson@yahoo.com</vnshare:email>
+    <vnshare:name>Charley Murazik</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/102">
+    <vnshare:email>rodrigo78@collier.com</vnshare:email>
+    <vnshare:name>Prof. Dedrick Osinski DDS</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/182">
+    <vnshare:email>upton.alexandrea@okuneva.biz</vnshare:email>
+    <vnshare:name>Elisabeth Ruecker II</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/170">
+    <vnshare:email>alec33@swaniawski.com</vnshare:email>
+    <vnshare:name>Dr. Major Lesch V</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/10">
+    <vnshare:email>aglae87@hotmail.com</vnshare:email>
+    <vnshare:name>Mr. Noble Donnelly</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/194">
+    <vnshare:email>zkuhlman@weimann.biz</vnshare:email>
+    <vnshare:name>Bernice Tromp</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/34">
+    <vnshare:email>kvolkman@hotmail.com</vnshare:email>
+    <vnshare:name>Clemmie Rogahn</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/22">
+    <vnshare:email>cordelia08@yahoo.com</vnshare:email>
+    <vnshare:name>Miss Connie Kulas Jr.</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#post161">
+    <vnshare:hasTag rdf:resource="http://vnshare.com/user/#tag19"/>
+    <vnshare:postTitle>Kiến thức phỏng vấn iOS _ Phần 1 : Structures and Classes</vnshare:postTitle>
+    <vnshare:points rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:points>
+    <vnshare:countViews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</vnshare:countViews>
+    <vnshare:postId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">161</vnshare:postId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/58">
+    <vnshare:email>brooklyn35@carter.org</vnshare:email>
+    <vnshare:name>Dr. Rodolfo Kulas</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/46">
+    <vnshare:email>lucienne.lueilwitz@kovacek.org</vnshare:email>
+    <vnshare:name>Tressie Baumbach</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/90">
+    <vnshare:email>clementina.wilderman@hotmail.com</vnshare:email>
+    <vnshare:name>Justine Lehner II</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#tag2">
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</vnshare:countPosts>
+    <vnshare:tagId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</vnshare:tagId>
+    <vnshare:tagTitle>JavaScript</vnshare:tagTitle>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#tag24">
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</vnshare:countPosts>
+    <vnshare:tagId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</vnshare:tagId>
+    <vnshare:tagTitle>Mobile</vnshare:tagTitle>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/149">
+    <vnshare:email>volkman.roscoe@buckridge.com</vnshare:email>
+    <vnshare:name>Mrs. Lurline Howe II</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#tag6">
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</vnshare:countPosts>
+    <vnshare:tagId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</vnshare:tagId>
+    <vnshare:tagTitle>Java</vnshare:tagTitle>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/137">
+    <vnshare:email>george.kerluke@brown.com</vnshare:email>
+    <vnshare:name>Sheridan Pacocha</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/101">
+    <vnshare:email>makenna39@gmail.com</vnshare:email>
+    <vnshare:name>Tyler Rutherford</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/113">
+    <vnshare:email>hartmann.zena@rodriguez.org</vnshare:email>
+    <vnshare:name>Prof. Carleton Prohaska IV</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/125">
+    <vnshare:email>heller.bernard@yahoo.com</vnshare:email>
+    <vnshare:name>Sydni Bayer</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/210">
+    <vnshare:email>quang.quang.td95@gmail.com</vnshare:email>
+    <vnshare:name>Thai Duy Quang</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/193">
+    <vnshare:email>jarrell80@rempel.com</vnshare:email>
+    <vnshare:name>Aaron Stiedemann</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/181">
+    <vnshare:email>jennyfer70@walker.com</vnshare:email>
+    <vnshare:name>Ressie Hane</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/21">
+    <vnshare:email>wilford59@turner.com</vnshare:email>
+    <vnshare:name>Henri Legros V</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/45">
+    <vnshare:email>oberbrunner.kyleigh@gmail.com</vnshare:email>
+    <vnshare:name>Ivah Lehner</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/33">
+    <vnshare:email>alexandra.bergstrom@metz.com</vnshare:email>
+    <vnshare:name>Gerald Ondricka</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/69">
+    <vnshare:email>libbie.paucek@hotmail.com</vnshare:email>
+    <vnshare:name>Sherman Rodriguez</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/57">
+    <vnshare:email>williamson.maverick@gmail.com</vnshare:email>
+    <vnshare:name>Johnny Hettinger I</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#tag13">
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</vnshare:countPosts>
+    <vnshare:tagId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13</vnshare:tagId>
+    <vnshare:tagTitle>Python</vnshare:tagTitle>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#tag25">
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</vnshare:countPosts>
+    <vnshare:tagId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</vnshare:tagId>
+    <vnshare:tagTitle>React</vnshare:tagTitle>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/124">
+    <vnshare:email>chris93@yahoo.com</vnshare:email>
+    <vnshare:name>Timmy Jast</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/148">
+    <vnshare:email>torphy.junior@hotmail.com</vnshare:email>
+    <vnshare:name>Jonathon Muller III</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/112">
+    <vnshare:email>therese.kshlerin@hotmail.com</vnshare:email>
+    <vnshare:name>Estefania Nolan</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/136">
+    <vnshare:email>jerad28@yahoo.com</vnshare:email>
+    <vnshare:name>Dr. Bertram Block</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/100">
+    <vnshare:email>daphnee76@gmail.com</vnshare:email>
+    <vnshare:name>Prof. Sherwood Hane</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/192">
+    <vnshare:email>ted49@hotmail.com</vnshare:email>
+    <vnshare:name>Rafael Larson</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/32">
+    <vnshare:email>althea.jerde@nader.info</vnshare:email>
+    <vnshare:name>Rosemary Grant Jr.</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/20">
+    <vnshare:email>don77@willms.com</vnshare:email>
+    <vnshare:name>Dr. Burley Klocko IV</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/9">
+    <vnshare:email>mellie33@gmail.com</vnshare:email>
+    <vnshare:name>Miss Maudie Stoltenberg</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/56">
+    <vnshare:email>uhowe@sanford.info</vnshare:email>
+    <vnshare:name>Dr. Jermaine Champlin II</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/44">
+    <vnshare:email>xsimonis@hotmail.com</vnshare:email>
+    <vnshare:name>Uriel Boehm II</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/180">
+    <vnshare:email>toy.orie@wintheiser.com</vnshare:email>
+    <vnshare:name>Lexie Kuvalis</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/68">
+    <vnshare:email>odessa.crooks@yahoo.com</vnshare:email>
+    <vnshare:name>Brown Collins PhD</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#tag10">
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</vnshare:countPosts>
+    <vnshare:tagId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</vnshare:tagId>
+    <vnshare:tagTitle>jQuery</vnshare:tagTitle>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#tag22">
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</vnshare:countPosts>
+    <vnshare:tagId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22</vnshare:tagId>
+    <vnshare:tagTitle>Androidava</vnshare:tagTitle>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/135">
+    <vnshare:email>nmcdermott@wisoky.org</vnshare:email>
+    <vnshare:name>Brandi Littel</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/123">
+    <vnshare:email>juanita14@gmail.com</vnshare:email>
+    <vnshare:name>Miss Serenity Kohler</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/159">
+    <vnshare:email>chris.gusikowski@hotmail.com</vnshare:email>
+    <vnshare:name>Martina Balistreri</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/147">
+    <vnshare:email>ischimmel@hagenes.com</vnshare:email>
+    <vnshare:name>Lydia Reynolds</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/111">
+    <vnshare:email>chelsea.maggio@hotmail.com</vnshare:email>
+    <vnshare:name>Tavares Ward</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/43">
+    <vnshare:email>leffler.glenna@rice.biz</vnshare:email>
+    <vnshare:name>Lonnie Brown</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/8">
+    <vnshare:email>cary79@emard.com</vnshare:email>
+    <vnshare:name>Chasity Goyette</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/31">
+    <vnshare:email>ekuhn@brekke.org</vnshare:email>
+    <vnshare:name>Dr. Arturo Fisher</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/67">
+    <vnshare:email>jeramie.stehr@gmail.com</vnshare:email>
+    <vnshare:name>Emmett Satterfield</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/55">
+    <vnshare:email>daugherty.peyton@bashirian.com</vnshare:email>
+    <vnshare:name>Harmony Waters DVM</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/191">
+    <vnshare:email>jalyn.mclaughlin@greenfelder.org</vnshare:email>
+    <vnshare:name>Dorian Considine</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/79">
+    <vnshare:email>nbuckridge@yahoo.com</vnshare:email>
+    <vnshare:name>Bernita Kautzer</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#post166">
+    <vnshare:hasTag rdf:resource="http://vnshare.com/user/#tag23"/>
+    <vnshare:postTitle>demo2</vnshare:postTitle>
+    <vnshare:points rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:points>
+    <vnshare:countViews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</vnshare:countViews>
+    <vnshare:postId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">166</vnshare:postId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#post154">
+    <vnshare:hasTag rdf:resource="http://vnshare.com/user/#tag2"/>
+    <vnshare:hasTag rdf:resource="http://vnshare.com/user/#tag1"/>
+    <vnshare:postTitle>game java demo space shooter</vnshare:postTitle>
+    <vnshare:points rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:points>
+    <vnshare:countViews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">34</vnshare:countViews>
+    <vnshare:postId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">154</vnshare:postId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#tag23">
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</vnshare:countPosts>
+    <vnshare:tagId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">23</vnshare:tagId>
+    <vnshare:tagTitle>Semantic</vnshare:tagTitle>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/146">
+    <vnshare:email>elvie.brown@legros.com</vnshare:email>
+    <vnshare:name>Owen Wilderman DDS</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/134">
+    <vnshare:email>yjohns@yahoo.com</vnshare:email>
+    <vnshare:name>Rhea Daniel</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/158">
+    <vnshare:email>alba89@ernser.com</vnshare:email>
+    <vnshare:name>Elda Legros</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/110">
+    <vnshare:email>nathan.denesik@gmail.com</vnshare:email>
+    <vnshare:name>Giovanny Ebert</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/122">
+    <vnshare:email>mshanahan@hotmail.com</vnshare:email>
+    <vnshare:name>Haskell Jenkins</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/30">
+    <vnshare:email>rachelle78@roberts.com</vnshare:email>
+    <vnshare:name>Fiona Carroll</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/7">
+    <vnshare:email>keebler.ursula@feil.com</vnshare:email>
+    <vnshare:name>Dr. Trever Kautzer</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/54">
+    <vnshare:email>dimitri.gerlach@murray.biz</vnshare:email>
+    <vnshare:name>Boris Stehr</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/42">
+    <vnshare:email>dubuque.aditya@harvey.info</vnshare:email>
+    <vnshare:name>Dr. Eloisa White II</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/78">
+    <vnshare:email>abagail44@hartmann.net</vnshare:email>
+    <vnshare:name>Dr. Albin Klein</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/66">
+    <vnshare:email>grimes.fred@beahan.info</vnshare:email>
+    <vnshare:name>Malinda Steuber</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/190">
+    <vnshare:email>shuel@gmail.com</vnshare:email>
+    <vnshare:name>Madelynn Crona</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/#post165">
+    <vnshare:hasTag rdf:resource="http://vnshare.com/user/#tag6"/>
+    <vnshare:hasTag rdf:resource="http://vnshare.com/user/#tag10"/>
+    <vnshare:hasTag rdf:resource="http://vnshare.com/user/#tag13"/>
+    <vnshare:hasTag rdf:resource="http://vnshare.com/user/#tag22"/>
+    <vnshare:postTitle>Demo</vnshare:postTitle>
+    <vnshare:points rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:points>
+    <vnshare:countViews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</vnshare:countViews>
+    <vnshare:postId rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">165</vnshare:postId>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/157">
+    <vnshare:email>ylangworth@pollich.biz</vnshare:email>
+    <vnshare:name>Luz Yundt IV</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/145">
+    <vnshare:email>omohr@gmail.com</vnshare:email>
+    <vnshare:name>Stephania Schneider</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/169">
+    <vnshare:email>alden24@yahoo.com</vnshare:email>
+    <vnshare:name>Jordane Parisian I</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/133">
+    <vnshare:email>julia71@oberbrunner.info</vnshare:email>
+    <vnshare:name>Courtney Mueller IV</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/121">
+    <vnshare:email>stiedemann.viva@yahoo.com</vnshare:email>
+    <vnshare:name>Chaim Brekke</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/41">
+    <vnshare:email>koch.bianka@smith.com</vnshare:email>
+    <vnshare:name>Ford Sawayn</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/6">
+    <vnshare:email>crona.stephon@okuneva.com</vnshare:email>
+    <vnshare:name>Dr. Lavon Kris DVM</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/65">
+    <vnshare:email>dulce63@yahoo.com</vnshare:email>
+    <vnshare:name>Prof. Ezequiel Ullrich MD</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/53">
+    <vnshare:email>delpha07@yahoo.com</vnshare:email>
+    <vnshare:name>Mr. Orville Gulgowski I</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/89">
+    <vnshare:email>taryn.veum@hotmail.com</vnshare:email>
+    <vnshare:name>Gunner Mante</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/77">
+    <vnshare:email>lorena45@dicki.biz</vnshare:email>
+    <vnshare:name>Ms. Taryn Prohaska</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/209">
+    <vnshare:hasPost rdf:resource="http://vnshare.com/user/#post154"/>
+    <vnshare:hasPost rdf:resource="http://vnshare.com/user/#post150"/>
+    <vnshare:email>admin@gmail.com</vnshare:email>
+    <vnshare:name>admin</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/168">
+    <vnshare:email>clemmie.kutch@hotmail.com</vnshare:email>
+    <vnshare:name>Dolly Wuckert</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/156">
+    <vnshare:email>fritz41@gmail.com</vnshare:email>
+    <vnshare:name>Raleigh Hirthe</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/120">
+    <vnshare:email>mitchell.jermaine@gmail.com</vnshare:email>
+    <vnshare:name>Augustus Cormier</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/144">
+    <vnshare:email>marie19@kemmer.net</vnshare:email>
+    <vnshare:name>Claudie Crooks</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/132">
+    <vnshare:email>romaguera.mikel@yahoo.com</vnshare:email>
+    <vnshare:name>Prof. Darrel Osinski Jr.</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/52">
+    <vnshare:email>marvin.tyler@hotmail.com</vnshare:email>
+    <vnshare:name>Dr. Genoveva Quigley</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/40">
+    <vnshare:email>metz.zack@hotmail.com</vnshare:email>
+    <vnshare:name>Cordelia Kovacek</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/76">
+    <vnshare:email>zachariah.lubowitz@davis.com</vnshare:email>
+    <vnshare:name>Dr. Green Becker</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/64">
+    <vnshare:email>rowe.jarvis@gmail.com</vnshare:email>
+    <vnshare:name>Prof. Novella Kulas Sr.</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/88">
+    <vnshare:email>kerluke.meta@ortiz.org</vnshare:email>
+    <vnshare:name>Luna Lemke</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vnshare.com/user/5">
+    <vnshare:email>aidan.renner@kihn.com</vnshare:email>
+    <vnshare:name>Miss Estel Feeney</vnshare:name>
+    <vnshare:reputation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:reputation>
+    <vnshare:countPosts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</vnshare:countPosts>
+  </rdf:Description>
+</rdf:RDF>

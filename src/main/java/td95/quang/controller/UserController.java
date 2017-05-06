@@ -56,6 +56,10 @@ public class UserController {
 	public String getUserProfile(@PathVariable int id, Model model) {
 		User user = userService.findOne(id);
 		model.addAttribute("user", user);
+		System.out.println(user.getPosts().size()+"cos tong cong post");
+		for (int i = 0 ; i < user.getPosts().size(); i++){
+			System.out.println(user.getPosts().get(i).getId());
+		}
 		return "user";
 	}
 	
